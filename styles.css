@@ -562,8 +562,7 @@ body {
         flex-direction: row;
         justify-content: space-between;
     }
-}
-.card-visual {
+    .card-visual {
     position: relative;
     width: 100%;
     aspect-ratio: 3 / 4;
@@ -582,4 +581,5 @@ body {
     display: block;
     object-fit: cover;
     border: 0;
+}
 }
