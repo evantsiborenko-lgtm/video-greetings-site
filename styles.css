@@ -562,15 +562,24 @@ body {
         flex-direction: row;
         justify-content: space-between;
     }
-    .card-video {
+}
+.card-visual {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    padding-top: 0;
+    overflow: hidden;
+    background: #111;
+}
+
+.card-video,
+.card-visual video,
+.card-visual img {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
-    border-radius: inherit;
-}
-
-.card-visual {
-    overflow: hidden;
-}
+    border: 0;
 }
