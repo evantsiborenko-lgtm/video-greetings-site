@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KVSemenov Video Greetings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">KVSemenov</div>
+            <nav class="nav">
+                <a href="#gallery">Примеры</a>
+                <a href="#packages">Цены</a>
+                <a href="#how-to-order">Как заказать</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-primary header-cta">Заказать</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <h1 class="hero-title">Кинематографичные<br><span class="highlight">AI видео-открытки</span></h1>
+                <p class="hero-subtitle">Персональные и готовые видео-открытки для праздников, Telegram, WhatsApp, соцсетей и бизнеса.</p>
+                <div class="hero-buttons">
+                    <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-primary btn-large">Заказать в Telegram</a>
+                    <a href="#gallery" class="btn btn-secondary btn-large">Смотреть примеры</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Portfolio / Gallery section -->
+        <section id="gallery" class="gallery section">
+            <div class="container">
+                <h2 class="section-title">Примеры работ</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <button class="filter-btn" data-filter="holidays">Праздники</button>
+                    <button class="filter-btn" data-filter="personal">Личные</button>
+                    <button class="filter-btn" data-filter="fantasy">Fantasy</button>
+                    <button class="filter-btn" data-filter="business">Бизнес</button>
+                </div>
+
+                <div class="gallery-grid">
+                    <!-- Card 1 -->
+                    <div class="card gallery-card" data-category="holidays">
+                        <div class="card-visual">
+                            <!-- TODO: Insert real video or cover image here -->
+                            <!-- <img src="assets/covers/cover1.jpg" alt="Cover" /> -->
+                            <!-- <video src="assets/videos/video1.mp4" muted loop></video> -->
+                            <div class="placeholder-gradient"></div>
+                        </div>
+                        <div class="card-content">
+                            <span class="category-label">Праздники</span>
+                            <h3 class="card-title">9 Мая / День Победы</h3>
+                            <p class="card-desc">Торжественная открытка в память о великом дне.</p>
+                            <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-outline btn-small">Заказать похожую</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card gallery-card" data-category="holidays">
+                        <div class="card-visual">
+                            <!-- TODO: Insert real video or cover image here -->
+                            <div class="placeholder-gradient"></div>
+                        </div>
+                        <div class="card-content">
+                            <span class="category-label">Праздники</span>
+                            <h3 class="card-title">1 Мая / Мир, труд, май</h3>
+                            <p class="card-desc">Светлое и радостное поздравление с праздником весны.</p>
+                            <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-outline btn-small">Заказать похожую</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card gallery-card" data-category="personal">
+                        <div class="card-visual">
+                            <!-- TODO: Insert real video or cover image here -->
+                            <div class="placeholder-gradient"></div>
+                        </div>
+                        <div class="card-content">
+                            <span class="category-label">Личные</span>
+                            <h3 class="card-title">День рождения</h3>
+                            <p class="card-desc">Яркое персональное поздравление для близкого человека.</p>
+                            <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-outline btn-small">Заказать похожую</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="card gallery-card" data-category="holidays">
+                        <div class="card-visual">
+                            <!-- TODO: Insert real video or cover image here -->
+                            <div class="placeholder-gradient"></div>
+                        </div>
+                        <div class="card-content">
+                            <span class="category-label">Праздники</span>
+                            <h3 class="card-title">8 Марта</h3>
+                            <p class="card-desc">Нежная и красивая видео-открытка для прекрасных дам.</p>
+                            <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-outline btn-small">Заказать похожую</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="card gallery-card" data-category="holidays">
+                        <div class="card-visual">
+                            <!-- TODO: Insert real video or cover image here -->
+                            <div class="placeholder-gradient"></div>
+                        </div>
+                        <div class="card-content">
+                            <span class="category-label">Праздники</span>
+                            <h3 class="card-title">Новый год</h3>
+                            <p class="card-desc">Волшебное новогоднее поздравление с атмосферой чуда.</p>
+                            <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-outline btn-small">Заказать похожую</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="card gallery-card" data-category="personal">
+                        <div class="card-visual">
+                            <!-- TODO: Insert real video or cover image here -->
+                            <div class="placeholder-gradient"></div>
+                        </div>
+                        <div class="card-content">
+                            <span class="category-label">Личные</span>
+                            <h3 class="card-title">Свадьба / годовщина</h3>
+                            <p class="card-desc">Романтичное видео для самого важного дня.</p>
+                            <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-outline btn-small">Заказать похожую</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="card gallery-card" data-category="fantasy">
+                        <div class="card-visual">
+                            <!-- TODO: Insert real video or cover image here -->
+                            <div class="placeholder-gradient"></div>
+                        </div>
+                        <div class="card-content">
+                            <span class="category-label">Fantasy</span>
+                            <h3 class="card-title">Fantasy greeting</h3>
+                            <p class="card-desc">Сказочные миры и магия в каждом кадре.</p>
+                            <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-outline btn-small">Заказать похожую</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="card gallery-card" data-category="business">
+                        <div class="card-visual">
+                            <!-- TODO: Insert real video or cover image here -->
+                            <div class="placeholder-gradient"></div>
+                        </div>
+                        <div class="card-content">
+                            <span class="category-label">Бизнес</span>
+                            <h3 class="card-title">Индивидуальная открытка</h3>
+                            <p class="card-desc">Премиальное видео для бизнес-партнеров или клиентов.</p>
+                            <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-outline btn-small">Заказать похожую</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Packages section -->
+        <section id="packages" class="packages section">
+            <div class="container">
+                <h2 class="section-title">Тарифы и услуги</h2>
+                <div class="packages-grid">
+                    <div class="package-card">
+                        <h3 class="package-title">Готовая открытка</h3>
+                        <div class="package-price">от 300 ₽</div>
+                        <p class="package-desc">Идеальный выбор, если вам нужно красивое поздравление прямо сейчас. Готовый стильный ролик без изменений.</p>
+                        <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-primary btn-full">Заказать в Telegram</a>
+                    </div>
+                    <div class="package-card featured">
+                        <div class="featured-badge">Популярный</div>
+                        <h3 class="package-title">Открытка с вашим текстом</h3>
+                        <div class="package-price">от 900 ₽</div>
+                        <p class="package-desc">Готовый видеоряд с вашим уникальным текстовым поздравлением. Персонализируем под получателя.</p>
+                        <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-primary btn-full">Заказать в Telegram</a>
+                    </div>
+                    <div class="package-card">
+                        <h3 class="package-title">Индивидуальная видео-открытка</h3>
+                        <div class="package-price">от 2 500 ₽</div>
+                        <p class="package-desc">Уникальный сценарий, генерация изображений и анимация с нуля. Полностью эксклюзивная работа под ваши пожелания.</p>
+                        <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-primary btn-full">Заказать в Telegram</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. How to order section -->
+        <section id="how-to-order" class="how-to-order section">
+            <div class="container">
+                <h2 class="section-title">Как заказать</h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3 class="step-title">Выберите пример или идею</h3>
+                        <p class="step-desc">Посмотрите галерею или придумайте свою концепцию.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title">Напишите в Telegram</h3>
+                        <p class="step-desc">Свяжитесь со мной, обсудим детали и пожелания.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title">Получите готовое видео</h3>
+                        <p class="step-desc">Наслаждайтесь результатом и радуйте близких!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. FAQ section -->
+        <section id="faq" class="faq section">
+            <div class="container">
+                <h2 class="section-title">Частые вопросы</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Сколько длится видео?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Обычно видео-открытка длится от 10 до 30 секунд. Это идеальный формат для социальных сетей и мессенджеров.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Можно ли добавить имя или свой текст?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Да, конечно! В тарифе "Открытка с вашим текстом" и "Индивидуальная видео-открытка" мы можем добавить любые имена и пожелания.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Можно ли сделать открытку под конкретного человека?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Да, индивидуальный тариф позволяет учесть внешность, увлечения и характер получателя.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>В каком формате я получу файл?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Вы получите видео в формате MP4 высокого качества (Full HD или 4K), оптимизированное для отправки в мессенджерах.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Можно ли заказать для бизнеса?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Да, мы создаем корпоративные поздравления, приглашения на мероприятия и промо-материалы. Свяжитесь для обсуждения деталей.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Final CTA section -->
+        <section class="final-cta section">
+            <div class="container cta-content">
+                <h2 class="cta-title">Хотите такую видео-открытку?</h2>
+                <p class="cta-desc">Удивите своих близких, друзей или коллег уникальным кинематографичным поздравлением!</p>
+                <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-primary btn-large cta-btn">Написать в Telegram</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="logo">KVSemenov Video Greetings</div>
+            <p class="copyright">&copy; 2024 KVSemenov. Все права защищены.</p>
+            <div class="footer-links">
+                <a href="https://t.me/KVSemenov" target="_blank">Telegram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
