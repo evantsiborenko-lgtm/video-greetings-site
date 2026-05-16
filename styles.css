@@ -17,9 +17,9 @@
     --accent-gradient: linear-gradient(135deg, #c99856 0%, #8c6230 100%);
     --card-bg: rgba(22, 22, 26, 0.8);
     --border-color: rgba(255, 255, 255, 0.1);
-    
+
     --font-main: 'Inter', sans-serif;
-    
+
     --transition: all 0.3s ease;
 }
 
@@ -211,11 +211,11 @@ body {
     .hero-title {
         font-size: 4.5rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.5rem;
     }
-    
+
     .hero-buttons {
         flex-direction: row;
     }
