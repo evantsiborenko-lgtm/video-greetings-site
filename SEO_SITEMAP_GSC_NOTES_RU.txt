@@ -1,0 +1,34 @@
+SEO / Sitemap / Google Search Console
+
+Добавлено:
+
+1. sitemap.xml
+   URL после публикации:
+   https://evantsiborenko-lgtm.github.io/video-greetings-site/sitemap.xml
+
+2. robots.txt
+   URL после публикации:
+   https://evantsiborenko-lgtm.github.io/video-greetings-site/robots.txt
+
+3. Google Search Console verification file
+   Файл:
+   googlec0bdf766a3da086f.html
+
+   URL после публикации:
+   https://evantsiborenko-lgtm.github.io/video-greetings-site/googlec0bdf766a3da086f.html
+
+После загрузки на GitHub Pages:
+
+1. Открой в браузере:
+   https://evantsiborenko-lgtm.github.io/video-greetings-site/sitemap.xml
+   https://evantsiborenko-lgtm.github.io/video-greetings-site/robots.txt
+   https://evantsiborenko-lgtm.github.io/video-greetings-site/googlec0bdf766a3da086f.html
+
+2. Если все три адреса открываются, зайди в Google Search Console и нажми Verify.
+
+3. После подтверждения отправь sitemap:
+   https://evantsiborenko-lgtm.github.io/video-greetings-site/sitemap.xml
+
+Важно:
+- sitemap.xml сейчас содержит главную страницу сайта, потому что сайт одностраничный.
+- Если позже появятся отдельные страницы /birthday, /new-year и т.п., их нужно добавить в sitemap.xml.
