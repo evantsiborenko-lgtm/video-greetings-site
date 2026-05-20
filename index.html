@@ -12,12 +12,12 @@
         <div class="container header-container">
             <div class="logo">KVSemenov</div>
             <nav class="nav">
-                <a href="#gallery">Примеры</a>
+                <a href="#catalog">Каталог</a>
                 <a href="#packages">Цены</a>
                 <a href="#how-to-order">Как заказать</a>
                 <a href="#faq">FAQ</a>
             </nav>
-            <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-primary header-cta">Заказать</a>
+            <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary header-cta">Заказать</a>
         </div>
     </header>
 
@@ -25,178 +25,842 @@
         <!-- 1. Hero Section -->
         <section id="hero" class="hero">
             <div class="container hero-content">
-                <h1 class="hero-title">Кинематографичные<br><span class="highlight">AI видео-открытки</span></h1>
-                <p class="hero-subtitle">Персональные и готовые видео-открытки для праздников, Telegram, WhatsApp, соцсетей и бизнеса.</p>
+                <h1 class="hero-title"><span class="highlight">Видео-открытки</span><br>для праздников</h1>
+                <p class="hero-subtitle">Готовые MP4-ролики для Telegram, WhatsApp и соцсетей. Выберите праздник, серию и подходящее поздравление.</p>
                 <div class="hero-buttons">
-                    <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-primary btn-large">Заказать в Telegram</a>
-                    <a href="#gallery" class="btn btn-secondary btn-large">Смотреть примеры</a>
+                    <a href="#catalog" class="btn btn-primary btn-large">Смотреть каталог</a>
+                    <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-large">Купить в Telegram</a>
                 </div>
             </div>
         </section>
 
-        <!-- 2. Portfolio / Gallery section -->
-        <section id="gallery" class="gallery section">
+
+        <!-- 2. Catalog section -->
+        <section id="catalog" class="catalog section">
             <div class="container">
-                <h2 class="section-title">Примеры работ</h2>
-                <div class="filter-buttons">
-                    <button class="filter-btn active" data-filter="all">Все</button>
-                    <button class="filter-btn" data-filter="holidays">Праздники</button>
-                    <button class="filter-btn" data-filter="personal">Личные</button>
-                    <button class="filter-btn" data-filter="fantasy">Fantasy</button>
-                    <button class="filter-btn" data-filter="business">Бизнес</button>
+                <h2 class="section-title">Каталог праздников</h2>
+                <div class="catalog-categories-grid">
+                    <button class="category-card category-active" aria-expanded="false" aria-controls="catalog-detail-birthday" id="cat-btn-birthday">
+                        <div class="category-card-content">
+                            <h3>День рождения</h3>
+                            <p>42 ролика, 7 серий, доступно сейчас</p>
+                        </div>
+                    </button>
+                    <div class="category-card category-soon" disabled id="cat-btn-newyear">
+                        <div class="category-card-content">
+                            <h3>Новый год</h3>
+                            <p>скоро</p>
+                        </div>
+                    </div>
+                    <div class="category-card category-soon" disabled id="cat-btn-march8">
+                        <div class="category-card-content">
+                            <h3>8 Марта</h3>
+                            <p>скоро</p>
+                        </div>
+                    </div>
+                    <div class="category-card category-soon" disabled id="cat-btn-wedding">
+                        <div class="category-card-content">
+                            <h3>Свадьба / годовщина</h3>
+                            <p>скоро</p>
+                        </div>
+                    </div>
+                    <div class="category-card category-soon" disabled id="cat-btn-valentine">
+                        <div class="category-card-content">
+                            <h3>День святого Валентина</h3>
+                            <p>скоро</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="gallery-grid">
-                    <!-- Card 1 -->
-                    <div class="card gallery-card" data-category="holidays">
-                        <div class="card-visual">
-                            <!-- TODO: Insert real video or cover image here -->
-                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
-                            <!-- <img src="assets/covers/cover1.jpg" alt="Cover" /> -->
-                            <!-- <video src="assets/videos/video1.mp4" autoplay muted loop playsinline></video> -->
-                            
-                        </div>
-                        <div class="card-content">
-                            <span class="category-label">Праздники</span>
-                            <h3 class="card-title">9 Мая / День Победы</h3>
-                            <p class="card-desc">Торжественная открытка в память о великом дне.</p>
-                            <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-outline btn-small">Заказать похожую</a>
+                <!-- Birthday Details (Expandable) -->
+                <div id="catalog-detail-birthday" class="catalog-detail" role="region" aria-labelledby="cat-btn-birthday" hidden>
+                    <div class="catalog-detail-header">
+                        <h3 class="detail-title">День рождения — 42 видео-открытки</h3>
+                        <p class="detail-desc">7 визуальных стилей: сказочная книга, волшебный подарок, котики, торт, premium, космос и котик-доставщик. Все ролики готовы к отправке в мессенджерах.</p>
+                        <div class="detail-pricing">
+                            <span>1 готовый ролик — <strong>49 ₽</strong></span>
+                            <span>Серия (6 роликов) — <strong>199 ₽</strong></span>
+                            <span>Полный набор (42 ролика) — <strong>490 ₽</strong></span>
+                            <span>Персонализация — <strong>+299 ₽</strong></span>
                         </div>
                     </div>
 
-                    <!-- Card 2 -->
-                    <div class="card gallery-card" data-category="holidays">
-                        <div class="card-visual">
-                            <!-- TODO: Insert real video or cover image here -->
-                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
-                            <!-- <video src="assets/videos/video2.mp4" autoplay muted loop playsinline></video> -->
-                            
+                    <div class="series-list">
+                        <div class="series-item">
+                            <button class="series-header" aria-expanded="false" aria-controls="series-content-1" id="series-btn-1">
+                                <div class="series-header-info">
+                                    <h4>Storybook — Сказочная книга</h4>
+                                    <p>Сказочная, тёплая и волшебная серия для мягкого поздравления. (Цена серии: 199 ₽)</p>
+                                </div>
+                                <span class="series-icon" aria-hidden="true">+</span>
+                            </button>
+                            <div id="series-content-1" class="series-content" role="region" aria-labelledby="series-btn-1" hidden>
+                                <div class="sku-grid">
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-SB-001</span>
+                                            <h5 class="sku-title">Ролик #1</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-SB-002</span>
+                                            <h5 class="sku-title">Ролик #2</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-SB-003</span>
+                                            <h5 class="sku-title">Ролик #3</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-SB-004</span>
+                                            <h5 class="sku-title">Ролик #4</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-SB-005</span>
+                                            <h5 class="sku-title">Ролик #5</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-SB-006</span>
+                                            <h5 class="sku-title">Ролик #6</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <span class="category-label">Праздники</span>
-                            <h3 class="card-title">1 Мая / Мир, труд, май</h3>
-                            <p class="card-desc">Светлое и радостное поздравление с праздником весны.</p>
-                            <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-outline btn-small">Заказать похожую</a>
+                        <div class="series-item">
+                            <button class="series-header" aria-expanded="false" aria-controls="series-content-2" id="series-btn-2">
+                                <div class="series-header-info">
+                                    <h4>Magic Gift — Волшебный подарок</h4>
+                                    <p>Магический подарок, свет и чудо — универсальная праздничная серия. (Цена серии: 199 ₽)</p>
+                                </div>
+                                <span class="series-icon" aria-hidden="true">+</span>
+                            </button>
+                            <div id="series-content-2" class="series-content" role="region" aria-labelledby="series-btn-2" hidden>
+                                <div class="sku-grid">
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-MG-001</span>
+                                            <h5 class="sku-title">Ролик #1</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-MG-002</span>
+                                            <h5 class="sku-title">Ролик #2</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-MG-003</span>
+                                            <h5 class="sku-title">Ролик #3</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-MG-004</span>
+                                            <h5 class="sku-title">Ролик #4</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-MG-005</span>
+                                            <h5 class="sku-title">Ролик #5</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-MG-006</span>
+                                            <h5 class="sku-title">Ролик #6</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="series-item">
+                            <button class="series-header" aria-expanded="false" aria-controls="series-content-3" id="series-btn-3">
+                                <div class="series-header-info">
+                                    <h4>Cat Gift — Котик с подарком</h4>
+                                    <p>Милая серия с котиком и подарком для тёплых и дружеских поздравлений. (Цена серии: 199 ₽)</p>
+                                </div>
+                                <span class="series-icon" aria-hidden="true">+</span>
+                            </button>
+                            <div id="series-content-3" class="series-content" role="region" aria-labelledby="series-btn-3" hidden>
+                                <div class="sku-grid">
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-CAT-001</span>
+                                            <h5 class="sku-title">Ролик #1</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-CAT-002</span>
+                                            <h5 class="sku-title">Ролик #2</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-CAT-003</span>
+                                            <h5 class="sku-title">Ролик #3</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-CAT-004</span>
+                                            <h5 class="sku-title">Ролик #4</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-CAT-005</span>
+                                            <h5 class="sku-title">Ролик #5</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-CAT-006</span>
+                                            <h5 class="sku-title">Ролик #6</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="series-item">
+                            <button class="series-header" aria-expanded="false" aria-controls="series-content-4" id="series-btn-4">
+                                <div class="series-header-info">
+                                    <h4>Cake — Торт собирается сам</h4>
+                                    <p>Праздничный торт, свечи и сладкие пожелания для детей, женщин, друзей и коллег. (Цена серии: 199 ₽)</p>
+                                </div>
+                                <span class="series-icon" aria-hidden="true">+</span>
+                            </button>
+                            <div id="series-content-4" class="series-content" role="region" aria-labelledby="series-btn-4" hidden>
+                                <div class="sku-grid">
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-CAKE-001</span>
+                                            <h5 class="sku-title">Ролик #1</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-CAKE-002</span>
+                                            <h5 class="sku-title">Ролик #2</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-CAKE-003</span>
+                                            <h5 class="sku-title">Ролик #3</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-CAKE-004</span>
+                                            <h5 class="sku-title">Ролик #4</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-CAKE-005</span>
+                                            <h5 class="sku-title">Ролик #5</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-CAKE-006</span>
+                                            <h5 class="sku-title">Ролик #6</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="series-item">
+                            <button class="series-header" aria-expanded="false" aria-controls="series-content-5" id="series-btn-5">
+                                <div class="series-header-info">
+                                    <h4>Golden — Золотой день рождения</h4>
+                                    <p>Элегантная premium-серия для взрослой аудитории, коллег и стильных поздравлений. (Цена серии: 199 ₽)</p>
+                                </div>
+                                <span class="series-icon" aria-hidden="true">+</span>
+                            </button>
+                            <div id="series-content-5" class="series-content" role="region" aria-labelledby="series-btn-5" hidden>
+                                <div class="sku-grid">
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-GOLD-001</span>
+                                            <h5 class="sku-title">Ролик #1</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-GOLD-002</span>
+                                            <h5 class="sku-title">Ролик #2</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-GOLD-003</span>
+                                            <h5 class="sku-title">Ролик #3</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-GOLD-004</span>
+                                            <h5 class="sku-title">Ролик #4</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-GOLD-005</span>
+                                            <h5 class="sku-title">Ролик #5</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-GOLD-006</span>
+                                            <h5 class="sku-title">Ролик #6</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="series-item">
+                            <button class="series-header" aria-expanded="false" aria-controls="series-content-6" id="series-btn-6">
+                                <div class="series-header-info">
+                                    <h4>Cosmic — Космический день рождения</h4>
+                                    <p>Яркая космическая серия для друзей, детей, подростков и фантазийных поздравлений. (Цена серии: 199 ₽)</p>
+                                </div>
+                                <span class="series-icon" aria-hidden="true">+</span>
+                            </button>
+                            <div id="series-content-6" class="series-content" role="region" aria-labelledby="series-btn-6" hidden>
+                                <div class="sku-grid">
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-COS-001</span>
+                                            <h5 class="sku-title">Ролик #1</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-COS-002</span>
+                                            <h5 class="sku-title">Ролик #2</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-COS-003</span>
+                                            <h5 class="sku-title">Ролик #3</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-COS-004</span>
+                                            <h5 class="sku-title">Ролик #4</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-COS-005</span>
+                                            <h5 class="sku-title">Ролик #5</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-COS-006</span>
+                                            <h5 class="sku-title">Ролик #6</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="series-item">
+                            <button class="series-header" aria-expanded="false" aria-controls="series-content-7" id="series-btn-7">
+                                <div class="series-header-info">
+                                    <h4>Cat Delivery — Котик-доставщик</h4>
+                                    <p>Милая и немного юмористическая серия: котик доставляет радость и поздравление. (Цена серии: 199 ₽)</p>
+                                </div>
+                                <span class="series-icon" aria-hidden="true">+</span>
+                            </button>
+                            <div id="series-content-7" class="series-content" role="region" aria-labelledby="series-btn-7" hidden>
+                                <div class="sku-grid">
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-CATD-001</span>
+                                            <h5 class="sku-title">Ролик #1</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-CATD-002</span>
+                                            <h5 class="sku-title">Ролик #2</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-CATD-003</span>
+                                            <h5 class="sku-title">Ролик #3</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-CATD-004</span>
+                                            <h5 class="sku-title">Ролик #4</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-CATD-005</span>
+                                            <h5 class="sku-title">Ролик #5</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sku-card">
+                                        <div class="sku-visual">
+                                            <!-- <video src="assets/videos/placeholder.mp4" autoplay muted loop playsinline></video> -->
+                                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
+                                        </div>
+                                        <div class="sku-info">
+                                            <span class="sku-code">HB-CATD-006</span>
+                                            <h5 class="sku-title">Ролик #6</h5>
+                                            <span class="sku-price">49 ₽</span>
+                                            <div class="sku-actions">
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить</a>
+                                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С текстом +299 ₽</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Card 3 -->
-                    <div class="card gallery-card" data-category="personal">
-                        <div class="card-visual">
-                            <!-- TODO: Insert real video or cover image here -->
-                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
-                            
+                    <div class="full-set-block">
+                        <div class="full-set-content">
+                            <h3>Полный набор День рождения — 42 видео-открытки</h3>
+                            <p>Все 7 серий в одном наборе. Подходит, если хотите иметь открытки на разные случаи: для родных, друзей, коллег, детей и тёплых личных поздравлений.</p>
+                            <span class="full-set-price">490 ₽</span>
                         </div>
-                        <div class="card-content">
-                            <span class="category-label">Личные</span>
-                            <h3 class="card-title">День рождения</h3>
-                            <p class="card-desc">Яркое персональное поздравление для близкого человека.</p>
-                            <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-outline btn-small">Заказать похожую</a>
-                        </div>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div class="card gallery-card" data-category="holidays">
-                        <div class="card-visual">
-                            <!-- TODO: Insert real video or cover image here -->
-                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
-                            
-                        </div>
-                        <div class="card-content">
-                            <span class="category-label">Праздники</span>
-                            <h3 class="card-title">8 Марта</h3>
-                            <p class="card-desc">Нежная и красивая видео-открытка для прекрасных дам.</p>
-                            <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-outline btn-small">Заказать похожую</a>
-                        </div>
-                    </div>
-
-                    <!-- Card 5 -->
-                    <div class="card gallery-card" data-category="holidays">
-                        <div class="card-visual">
-                            <!-- TODO: Insert real video or cover image here -->
-                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
-                            
-                        </div>
-                        <div class="card-content">
-                            <span class="category-label">Праздники</span>
-                            <h3 class="card-title">Новый год</h3>
-                            <p class="card-desc">Волшебное новогоднее поздравление с атмосферой чуда.</p>
-                            <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-outline btn-small">Заказать похожую</a>
-                        </div>
-                    </div>
-
-                    <!-- Card 6 -->
-                    <div class="card gallery-card" data-category="personal">
-                        <div class="card-visual">
-                            <!-- TODO: Insert real video or cover image here -->
-                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
-                            
-                        </div>
-                        <div class="card-content">
-                            <span class="category-label">Личные</span>
-                            <h3 class="card-title">Свадьба / годовщина</h3>
-                            <p class="card-desc">Романтичное видео для самого важного дня.</p>
-                            <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-outline btn-small">Заказать похожую</a>
-                        </div>
-                    </div>
-
-                    <!-- Card 7 -->
-                    <div class="card gallery-card" data-category="fantasy">
-                        <div class="card-visual">
-                            <!-- TODO: Insert real video or cover image here -->
-                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
-                            
-                        </div>
-                        <div class="card-content">
-                            <span class="category-label">Fantasy</span>
-                            <h3 class="card-title">Fantasy greeting</h3>
-                            <p class="card-desc">Сказочные миры и магия в каждом кадре.</p>
-                            <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-outline btn-small">Заказать похожую</a>
-                        </div>
-                    </div>
-
-                    <!-- Card 8 -->
-                    <div class="card gallery-card" data-category="business">
-                        <div class="card-visual">
-                            <!-- TODO: Insert real video or cover image here -->
-                            <video src="assets/videos/grok-video-3889be72-f07b-474e-aaed-a80474775593.mp4" autoplay muted loop playsinline></video>
-                            
-                        </div>
-                        <div class="card-content">
-                            <span class="category-label">Бизнес</span>
-                            <h3 class="card-title">Индивидуальная открытка</h3>
-                            <p class="card-desc">Премиальное видео для бизнес-партнеров или клиентов.</p>
-                            <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-outline btn-small">Заказать похожую</a>
-                        </div>
+                        <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">Купить полный набор</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 3. Packages section -->
+
+                <!-- 3. Packages section -->
         <section id="packages" class="packages section">
             <div class="container">
-                <h2 class="section-title">Тарифы и услуги</h2>
+                <h2 class="section-title">Тарифы</h2>
                 <div class="packages-grid">
                     <div class="package-card">
-                        <h3 class="package-title">Готовая открытка</h3>
-                        <div class="package-price">от 300 ₽</div>
-                        <p class="package-desc">Идеальный выбор, если вам нужно красивое поздравление прямо сейчас. Готовый стильный ролик без изменений.</p>
-                        <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-primary btn-full">Заказать в Telegram</a>
+                        <h3>1 готовый ролик</h3>
+                        <div class="price">49 ₽</div>
+                        <ul class="package-features">
+                            <li>Один ролик из каталога</li>
+                            <li>Без изменений текста</li>
+                            <li>Мгновенная доставка</li>
+                        </ul>
+                        <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Выбрать в каталоге</a>
                     </div>
                     <div class="package-card featured">
-                        <div class="featured-badge">Популярный</div>
-                        <h3 class="package-title">Открытка с вашим текстом</h3>
-                        <div class="package-price">от 900 ₽</div>
-                        <p class="package-desc">Готовый видеоряд с вашим уникальным текстовым поздравлением. Персонализируем под получателя.</p>
-                        <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-primary btn-full">Заказать в Telegram</a>
+                        <div class="popular-badge">Популярно</div>
+                        <h3>Серия из 6 роликов</h3>
+                        <div class="price">199 ₽</div>
+                        <ul class="package-features">
+                            <li>6 роликов одного стиля</li>
+                            <li>Без изменений текста</li>
+                            <li>Экономия по сравнению со штучной покупкой</li>
+                        </ul>
+                        <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Выбрать в каталоге</a>
                     </div>
                     <div class="package-card">
-                        <h3 class="package-title">Индивидуальная видео-открытка</h3>
-                        <div class="package-price">от 2 500 ₽</div>
-                        <p class="package-desc">Уникальный сценарий, генерация изображений и анимация с нуля. Полностью эксклюзивная работа под ваши пожелания.</p>
-                        <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-primary btn-full">Заказать в Telegram</a>
+                        <h3>Полный набор</h3>
+                        <div class="price">490 ₽</div>
+                        <ul class="package-features">
+                            <li>Все 42 ролика (7 серий)</li>
+                            <li>На все случаи жизни</li>
+                            <li>Максимальная выгода</li>
+                        </ul>
+                        <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Купить набор</a>
                     </div>
+                </div>
+                <div style="text-align: center; margin-top: 30px;">
+                    <p><strong>Персонализация (добавление имени или своего текста): +299 ₽ к стоимости заказа.</strong></p>
                 </div>
             </div>
         </section>
@@ -229,50 +893,50 @@
         <section id="faq" class="faq section">
             <div class="container">
                 <h2 class="section-title">Частые вопросы</h2>
-                <div class="faq-list">
+                                                <div class="faq-list">
                     <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>Сколько длится видео?</h3>
-                            <span class="faq-icon">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Обычно видео-открытка длится от 10 до 30 секунд. Это идеальный формат для социальных сетей и мессенджеров.</p>
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1" id="faq-btn-1">
+                            <h3>В каком формате ролики?</h3>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="faq-answer-1" class="faq-answer" role="region" aria-labelledby="faq-btn-1">
+                            <p>MP4, вертикальный формат 1080×1920, подходят для Telegram, WhatsApp и соцсетей.</p>
                         </div>
                     </div>
                     <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>Можно ли добавить имя или свой текст?</h3>
-                            <span class="faq-icon">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Да, конечно! В тарифе "Открытка с вашим текстом" и "Индивидуальная видео-открытка" мы можем добавить любые имена и пожелания.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>Можно ли сделать открытку под конкретного человека?</h3>
-                            <span class="faq-icon">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Да, индивидуальный тариф позволяет учесть внешность, увлечения и характер получателя.</p>
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2" id="faq-btn-2">
+                            <h3>Можно ли добавить имя?</h3>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="faq-answer-2" class="faq-answer" role="region" aria-labelledby="faq-btn-2">
+                            <p>Да, персонализация имени или текста стоит +299 ₽.</p>
                         </div>
                     </div>
                     <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>В каком формате я получу файл?</h3>
-                            <span class="faq-icon">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Вы получите видео в формате MP4 высокого качества (Full HD или 4K), оптимизированное для отправки в мессенджерах.</p>
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3" id="faq-btn-3">
+                            <h3>Можно ли купить только одну открытку?</h3>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="faq-answer-3" class="faq-answer" role="region" aria-labelledby="faq-btn-3">
+                            <p>Да, один готовый ролик стоит 49 ₽.</p>
                         </div>
                     </div>
                     <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>Можно ли заказать для бизнеса?</h3>
-                            <span class="faq-icon">+</span>
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4" id="faq-btn-4">
+                            <h3>Можно ли купить серию?</h3>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="faq-answer-4" class="faq-answer" role="region" aria-labelledby="faq-btn-4">
+                            <p>Да, серия из 6 роликов стоит 199 ₽.</p>
                         </div>
-                        <div class="faq-answer">
-                            <p>Да, мы создаем корпоративные поздравления, приглашения на мероприятия и промо-материалы. Свяжитесь для обсуждения деталей.</p>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5" id="faq-btn-5">
+                            <h3>Можно ли купить весь набор?</h3>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="faq-answer-5" class="faq-answer" role="region" aria-labelledby="faq-btn-5">
+                            <p>Да, полный набор “День рождения” из 42 роликов стоит 490 ₽.</p>
                         </div>
                     </div>
                 </div>
@@ -284,7 +948,7 @@
             <div class="container cta-content">
                 <h2 class="cta-title">Хотите такую видео-открытку?</h2>
                 <p class="cta-desc">Удивите своих близких, друзей или коллег уникальным кинематографичным поздравлением!</p>
-                <a href="https://t.me/KVSemenov" target="_blank" class="btn btn-primary btn-large cta-btn">Написать в Telegram</a>
+                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large cta-btn">Написать в Telegram</a>
             </div>
         </section>
     </main>
