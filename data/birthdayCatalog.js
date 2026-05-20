@@ -68,7 +68,7 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/01_Storybook/HB-SB-001_magic-wish_15s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/01_Storybook/HB-SB-001_magic-wish_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "15 сек"
+      "duration": "12 сек"
     },
     {
       "id": "HB-SB-002",
@@ -124,11 +124,11 @@ window.birthdayCatalog = {
       "textCode": "short-magic",
       "seriesId": "01_storybook",
       "seriesTitle": "Сказочная книга",
-      "baseFile": "HB-SB-006_short-magic_15s_1080p_6mbps",
-      "poster": "assets/posters/01_Birthday/01_Storybook/HB-SB-006_short-magic_15s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/01_Birthday/01_Storybook/HB-SB-006_short-magic_15s_1080p_6mbps_site-preview_720x1280.mp4",
+      "baseFile": "HB-SB-006_short-magic_12s_1080p_6mbps",
+      "poster": "assets/posters/01_Birthday/01_Storybook/HB-SB-006_short-magic_12s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/01_Storybook/HB-SB-006_short-magic_12s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "15 сек"
+      "duration": "12 сек"
     },
     {
       "id": "HB-MG-001",
