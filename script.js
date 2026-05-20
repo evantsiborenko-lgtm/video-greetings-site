@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("DOMContentLoaded fired.");
-    console.log("window.birthdayCatalog:", typeof window.birthdayCatalog);
     // 1. Smooth Scrolling for Navigation Links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -56,52 +54,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // --- DYNAMIC CATALOG RENDERING ---
-    const catalogContainer = document.getElementById('catalog-container'); console.log("Container:", catalogContainer);
+    const catalogContainer = document.getElementById('catalog-container');
     if (catalogContainer && window.birthdayCatalog) {
-        console.log("Calling renderCatalog"); renderCatalog(catalogContainer, window.birthdayCatalog);
+        renderCatalog(catalogContainer, window.birthdayCatalog);
     }
 
     function renderCatalog(container, data) {
         // 1. Categories Grid
         const categoriesHTML = `
             <div class="catalog-categories-grid">
-                <button class="category-card category-active active" aria-expanded="true" aria-controls="catalog-detail-birthday" id="cat-btn-birthday">
+                <button class="category-card category-active active" type="button" aria-expanded="true" aria-controls="catalog-detail-birthday" id="cat-btn-birthday">
                     <div class="category-card-content">
                         <h3>День рождения</h3>
                         <p>42 ролика, 7 серий, доступно сейчас</p>
                     </div>
                 </button>
-                <div class="category-card category-soon" disabled>
+                <button class="category-card category-soon" type="button" disabled aria-disabled="true">
                     <div class="category-card-content">
                         <h3>Новый год</h3>
                         <p>скоро</p>
                     </div>
-                </div>
-                <div class="category-card category-soon" disabled>
+                </button>
+                <button class="category-card category-soon" type="button" disabled aria-disabled="true">
                     <div class="category-card-content">
                         <h3>8 Марта</h3>
                         <p>скоро</p>
                     </div>
-                </div>
-                <div class="category-card category-soon" disabled>
+                </button>
+                <button class="category-card category-soon" type="button" disabled aria-disabled="true">
                     <div class="category-card-content">
                         <h3>День святого Валентина</h3>
                         <p>скоро</p>
                     </div>
-                </div>
-                <div class="category-card category-soon" disabled>
+                </button>
+                <button class="category-card category-soon" type="button" disabled aria-disabled="true">
                     <div class="category-card-content">
                         <h3>Свадьба / годовщина</h3>
                         <p>скоро</p>
                     </div>
-                </div>
+                </button>
             </div>
         `;
 
         // 2. Birthday Detail View
-        let seriesListHTML = '<div class="series-list">';
+        let seriesListHTML = '<div id="birthday-series" class="series-list">';
         
         data.series.forEach((series, index) => {
+            const seriesLabel = series.folderName || String(index + 1).padStart(2, '0');
             const seriesSkus = data.skus.filter(sku => sku.seriesId === series.id);
             
             let skusHTML = '<div class="sku-grid">';
@@ -133,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="series-item">
                     <button class="series-header" aria-expanded="false" aria-controls="series-content-${index}" id="series-btn-${index}">
                         <div class="series-header-info">
-                            <h4>${series.id.split('_', 1)[1].replace('_', ' ')} — ${series.title}</h4>
+                            <h4>${seriesLabel} — ${series.title}</h4>
                             <p>${series.desc} (Цена серии: 199 ₽)</p>
                         </div>
                         <span class="series-icon" aria-hidden="true">+</span>
@@ -198,6 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         video.muted = true;
                         video.loop = true;
                         video.playsInline = true;
+                        video.preload = "none";
                         video.style.cssText = "position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:2;";
                         // Disable controls and pip
                         video.setAttribute('controlsList', 'nodownload');

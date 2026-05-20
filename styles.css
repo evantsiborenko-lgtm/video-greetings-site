@@ -612,7 +612,8 @@ body {
     width: 100%;
 }
 
-.category-card.category-soon {
+.category-card.category-soon,
+.category-card:disabled {
     opacity: 0.6;
     cursor: not-allowed;
     background: var(--bg-color);
@@ -747,15 +748,16 @@ body {
 }
 
 .series-content {
-    padding: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 20px;
+    overflow: visible;
+}
+
+.series-content[hidden] {
+    display: none;
 }
 
 .series-item.active .series-content {
     padding: 20px;
-    max-height: 3000px; /* arbitrary large value for grid */
 }
 
 /* SKU Grid */

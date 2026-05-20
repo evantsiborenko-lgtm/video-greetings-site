@@ -4,43 +4,57 @@ window.birthdayCatalog = {
       "id": "01_storybook",
       "title": "Сказочная книга",
       "desc": "Сказочная, тёплая и волшебная серия для мягкого поздравления.",
-      "price": 199
+      "price": 199,
+      "folderName": "01_Storybook",
+      "assetsFolder": "01_Birthday/01_Storybook"
     },
     {
       "id": "02_magic_gift",
       "title": "Волшебный подарок",
       "desc": "Магический подарок, свет и чудо — универсальная праздничная серия.",
-      "price": 199
+      "price": 199,
+      "folderName": "02_Magic_Gift",
+      "assetsFolder": "01_Birthday/02_Magic_Gift"
     },
     {
       "id": "03_cat_gift",
       "title": "Котик с подарком",
       "desc": "Милая серия с котиком и подарком для тёплых и дружеских поздравлений.",
-      "price": 199
+      "price": 199,
+      "folderName": "03_Cat_Gift",
+      "assetsFolder": "01_Birthday/03_Cat_Gift"
     },
     {
       "id": "04_cake",
       "title": "Торт собирается сам",
       "desc": "Праздничный торт, свечи и сладкие пожелания для детей, женщин, друзей и коллег.",
-      "price": 199
+      "price": 199,
+      "folderName": "04_Cake",
+      "assetsFolder": "01_Birthday/04_Cake"
     },
     {
       "id": "05_golden",
       "title": "Золотой день рождения",
       "desc": "Элегантная premium-серия для взрослой аудитории, коллег и стильных поздравлений.",
-      "price": 199
+      "price": 199,
+      "folderName": "05_Golden",
+      "assetsFolder": "01_Birthday/05_Golden"
     },
     {
       "id": "06_cosmic",
       "title": "Космический день рождения",
       "desc": "Яркая космическая серия для друзей, детей, подростков и фантазийных поздравлений.",
-      "price": 199
+      "price": 199,
+      "folderName": "06_Cosmic",
+      "assetsFolder": "01_Birthday/06_Cosmic"
     },
     {
       "id": "07_cat_delivery",
       "title": "Котик-доставщик",
       "desc": "Милая и немного юмористическая серия: котик доставляет радость и поздравление.",
-      "price": 199
+      "price": 199,
+      "folderName": "07_Cat_Delivery",
+      "assetsFolder": "01_Birthday/07_Cat_Delivery"
     }
   ],
   "skus": [
@@ -51,8 +65,8 @@ window.birthdayCatalog = {
       "seriesId": "01_storybook",
       "seriesTitle": "Сказочная книга",
       "baseFile": "HB-SB-001_magic-wish_15s_1080p_6mbps",
-      "poster": "assets/posters/HB-SB-001_magic-wish_15s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-SB-001_magic-wish_15s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/01_Storybook/HB-SB-001_magic-wish_15s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/01_Storybook/HB-SB-001_magic-wish_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "15 сек"
     },
@@ -63,8 +77,8 @@ window.birthdayCatalog = {
       "seriesId": "01_storybook",
       "seriesTitle": "Сказочная книга",
       "baseFile": "HB-SB-002_today-your-day_15s_1080p_6mbps",
-      "poster": "assets/posters/HB-SB-002_today-your-day_15s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-SB-002_today-your-day_15s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/01_Storybook/HB-SB-002_today-your-day_15s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/01_Storybook/HB-SB-002_today-your-day_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "15 сек"
     },
@@ -75,8 +89,8 @@ window.birthdayCatalog = {
       "seriesId": "01_storybook",
       "seriesTitle": "Сказочная книга",
       "baseFile": "HB-SB-003_dreams-come-true_15s_1080p_6mbps",
-      "poster": "assets/posters/HB-SB-003_dreams-come-true_15s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-SB-003_dreams-come-true_15s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/01_Storybook/HB-SB-003_dreams-come-true_15s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/01_Storybook/HB-SB-003_dreams-come-true_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "15 сек"
     },
@@ -87,8 +101,8 @@ window.birthdayCatalog = {
       "seriesId": "01_storybook",
       "seriesTitle": "Сказочная книга",
       "baseFile": "HB-SB-004_for-mom_15s_1080p_6mbps",
-      "poster": "assets/posters/HB-SB-004_for-mom_15s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-SB-004_for-mom_15s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/01_Storybook/HB-SB-004_for-mom_15s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/01_Storybook/HB-SB-004_for-mom_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "15 сек"
     },
@@ -99,8 +113,8 @@ window.birthdayCatalog = {
       "seriesId": "01_storybook",
       "seriesTitle": "Сказочная книга",
       "baseFile": "HB-SB-005_for-friend_15s_1080p_6mbps",
-      "poster": "assets/posters/HB-SB-005_for-friend_15s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-SB-005_for-friend_15s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/01_Storybook/HB-SB-005_for-friend_15s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/01_Storybook/HB-SB-005_for-friend_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "15 сек"
     },
@@ -111,8 +125,8 @@ window.birthdayCatalog = {
       "seriesId": "01_storybook",
       "seriesTitle": "Сказочная книга",
       "baseFile": "HB-SB-006_short-magic_15s_1080p_6mbps",
-      "poster": "assets/posters/HB-SB-006_short-magic_15s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-SB-006_short-magic_15s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/01_Storybook/HB-SB-006_short-magic_15s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/01_Storybook/HB-SB-006_short-magic_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "15 сек"
     },
@@ -123,8 +137,8 @@ window.birthdayCatalog = {
       "seriesId": "02_magic_gift",
       "seriesTitle": "Волшебный подарок",
       "baseFile": "HB-MG-001_open-miracle_10s_1080p_6mbps",
-      "poster": "assets/posters/HB-MG-001_open-miracle_10s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-MG-001_open-miracle_10s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/02_Magic_Gift/HB-MG-001_open-miracle_10s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/02_Magic_Gift/HB-MG-001_open-miracle_10s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "10 сек"
     },
@@ -135,8 +149,8 @@ window.birthdayCatalog = {
       "seriesId": "02_magic_gift",
       "seriesTitle": "Волшебный подарок",
       "baseFile": "HB-MG-002_warm-wishes_10s_1080p_6mbps",
-      "poster": "assets/posters/HB-MG-002_warm-wishes_10s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-MG-002_warm-wishes_10s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/02_Magic_Gift/HB-MG-002_warm-wishes_10s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/02_Magic_Gift/HB-MG-002_warm-wishes_10s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "10 сек"
     },
@@ -147,8 +161,8 @@ window.birthdayCatalog = {
       "seriesId": "02_magic_gift",
       "seriesTitle": "Волшебный подарок",
       "baseFile": "HB-MG-003_dreams-light_10s_1080p_6mbps",
-      "poster": "assets/posters/HB-MG-003_dreams-light_10s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-MG-003_dreams-light_10s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/02_Magic_Gift/HB-MG-003_dreams-light_10s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/02_Magic_Gift/HB-MG-003_dreams-light_10s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "10 сек"
     },
@@ -159,8 +173,8 @@ window.birthdayCatalog = {
       "seriesId": "02_magic_gift",
       "seriesTitle": "Волшебный подарок",
       "baseFile": "HB-MG-004_beautiful-day_10s_1080p_6mbps",
-      "poster": "assets/posters/HB-MG-004_beautiful-day_10s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-MG-004_beautiful-day_10s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/02_Magic_Gift/HB-MG-004_beautiful-day_10s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/02_Magic_Gift/HB-MG-004_beautiful-day_10s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "10 сек"
     },
@@ -171,8 +185,8 @@ window.birthdayCatalog = {
       "seriesId": "02_magic_gift",
       "seriesTitle": "Волшебный подарок",
       "baseFile": "HB-MG-005_little-magic_10s_1080p_6mbps",
-      "poster": "assets/posters/HB-MG-005_little-magic_10s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-MG-005_little-magic_10s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/02_Magic_Gift/HB-MG-005_little-magic_10s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/02_Magic_Gift/HB-MG-005_little-magic_10s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "10 сек"
     },
@@ -183,8 +197,8 @@ window.birthdayCatalog = {
       "seriesId": "02_magic_gift",
       "seriesTitle": "Волшебный подарок",
       "baseFile": "HB-MG-006_classic-wishes_10s_1080p_6mbps",
-      "poster": "assets/posters/HB-MG-006_classic-wishes_10s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-MG-006_classic-wishes_10s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/02_Magic_Gift/HB-MG-006_classic-wishes_10s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/02_Magic_Gift/HB-MG-006_classic-wishes_10s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "10 сек"
     },
@@ -195,8 +209,8 @@ window.birthdayCatalog = {
       "seriesId": "03_cat_gift",
       "seriesTitle": "Котик с подарком",
       "baseFile": "HB-CAT-001_little-wonders_8s_1080p_6mbps",
-      "poster": "assets/posters/HB-CAT-001_little-wonders_8s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-CAT-001_little-wonders_8s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/03_Cat_Gift/HB-CAT-001_little-wonders_8s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/03_Cat_Gift/HB-CAT-001_little-wonders_8s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "8 сек"
     },
@@ -207,8 +221,8 @@ window.birthdayCatalog = {
       "seriesId": "03_cat_gift",
       "seriesTitle": "Котик с подарком",
       "baseFile": "HB-CAT-002_universal-joy_8s_1080p_6mbps",
-      "poster": "assets/posters/HB-CAT-002_universal-joy_8s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-CAT-002_universal-joy_8s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/03_Cat_Gift/HB-CAT-002_universal-joy_8s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/03_Cat_Gift/HB-CAT-002_universal-joy_8s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "8 сек"
     },
@@ -219,8 +233,8 @@ window.birthdayCatalog = {
       "seriesId": "03_cat_gift",
       "seriesTitle": "Котик с подарком",
       "baseFile": "HB-CAT-003_gift-of-smiles_8s_1080p_6mbps",
-      "poster": "assets/posters/HB-CAT-003_gift-of-smiles_8s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-CAT-003_gift-of-smiles_8s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/03_Cat_Gift/HB-CAT-003_gift-of-smiles_8s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/03_Cat_Gift/HB-CAT-003_gift-of-smiles_8s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "8 сек"
     },
@@ -231,8 +245,8 @@ window.birthdayCatalog = {
       "seriesId": "03_cat_gift",
       "seriesTitle": "Котик с подарком",
       "baseFile": "HB-CAT-004_for-friend_8s_1080p_6mbps",
-      "poster": "assets/posters/HB-CAT-004_for-friend_8s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-CAT-004_for-friend_8s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/03_Cat_Gift/HB-CAT-004_for-friend_8s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/03_Cat_Gift/HB-CAT-004_for-friend_8s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "8 сек"
     },
@@ -243,8 +257,8 @@ window.birthdayCatalog = {
       "seriesId": "03_cat_gift",
       "seriesTitle": "Котик с подарком",
       "baseFile": "HB-CAT-005_for-mom_8s_1080p_6mbps",
-      "poster": "assets/posters/HB-CAT-005_for-mom_8s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-CAT-005_for-mom_8s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/03_Cat_Gift/HB-CAT-005_for-mom_8s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/03_Cat_Gift/HB-CAT-005_for-mom_8s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "8 сек"
     },
@@ -255,8 +269,8 @@ window.birthdayCatalog = {
       "seriesId": "03_cat_gift",
       "seriesTitle": "Котик с подарком",
       "baseFile": "HB-CAT-006_meow-delivery_8s_1080p_6mbps",
-      "poster": "assets/posters/HB-CAT-006_meow-delivery_8s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-CAT-006_meow-delivery_8s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/03_Cat_Gift/HB-CAT-006_meow-delivery_8s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/03_Cat_Gift/HB-CAT-006_meow-delivery_8s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "8 сек"
     },
@@ -267,8 +281,8 @@ window.birthdayCatalog = {
       "seriesId": "04_cake",
       "seriesTitle": "Торт собирается сам",
       "baseFile": "HB-CAKE-001_sweet-wishes_15s_1080p_6mbps",
-      "poster": "assets/posters/HB-CAKE-001_sweet-wishes_15s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-CAKE-001_sweet-wishes_15s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/04_Cake/HB-CAKE-001_sweet-wishes_15s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/04_Cake/HB-CAKE-001_sweet-wishes_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "15 сек"
     },
@@ -279,8 +293,8 @@ window.birthdayCatalog = {
       "seriesId": "04_cake",
       "seriesTitle": "Торт собирается сам",
       "baseFile": "HB-CAKE-002_candles-wish_15s_1080p_6mbps",
-      "poster": "assets/posters/HB-CAKE-002_candles-wish_15s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-CAKE-002_candles-wish_15s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/04_Cake/HB-CAKE-002_candles-wish_15s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/04_Cake/HB-CAKE-002_candles-wish_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "15 сек"
     },
@@ -291,8 +305,8 @@ window.birthdayCatalog = {
       "seriesId": "04_cake",
       "seriesTitle": "Торт собирается сам",
       "baseFile": "HB-CAKE-003_sweet-childhood_15s_1080p_6mbps",
-      "poster": "assets/posters/HB-CAKE-003_sweet-childhood_15s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-CAKE-003_sweet-childhood_15s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/04_Cake/HB-CAKE-003_sweet-childhood_15s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/04_Cake/HB-CAKE-003_sweet-childhood_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "15 сек"
     },
@@ -303,8 +317,8 @@ window.birthdayCatalog = {
       "seriesId": "04_cake",
       "seriesTitle": "Торт собирается сам",
       "baseFile": "HB-CAKE-004_gentle-beauty_15s_1080p_6mbps",
-      "poster": "assets/posters/HB-CAKE-004_gentle-beauty_15s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-CAKE-004_gentle-beauty_15s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/04_Cake/HB-CAKE-004_gentle-beauty_15s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/04_Cake/HB-CAKE-004_gentle-beauty_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "15 сек"
     },
@@ -315,8 +329,8 @@ window.birthdayCatalog = {
       "seriesId": "04_cake",
       "seriesTitle": "Торт собирается сам",
       "baseFile": "HB-CAKE-005_colleague-wishes_15s_1080p_6mbps",
-      "poster": "assets/posters/HB-CAKE-005_colleague-wishes_15s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-CAKE-005_colleague-wishes_15s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/04_Cake/HB-CAKE-005_colleague-wishes_15s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/04_Cake/HB-CAKE-005_colleague-wishes_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "15 сек"
     },
@@ -327,8 +341,8 @@ window.birthdayCatalog = {
       "seriesId": "04_cake",
       "seriesTitle": "Торт собирается сам",
       "baseFile": "HB-CAKE-006_berry-happiness_15s_1080p_6mbps",
-      "poster": "assets/posters/HB-CAKE-006_berry-happiness_15s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-CAKE-006_berry-happiness_15s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/04_Cake/HB-CAKE-006_berry-happiness_15s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/04_Cake/HB-CAKE-006_berry-happiness_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "15 сек"
     },
@@ -339,8 +353,8 @@ window.birthdayCatalog = {
       "seriesId": "05_golden",
       "seriesTitle": "Золотой день рождения",
       "baseFile": "HB-GOLD-001_beautiful-day_15s_1080p_6mbps",
-      "poster": "assets/posters/HB-GOLD-001_beautiful-day_15s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-GOLD-001_beautiful-day_15s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/05_Golden/HB-GOLD-001_beautiful-day_15s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/05_Golden/HB-GOLD-001_beautiful-day_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "15 сек"
     },
@@ -351,8 +365,8 @@ window.birthdayCatalog = {
       "seriesId": "05_golden",
       "seriesTitle": "Золотой день рождения",
       "baseFile": "HB-GOLD-002_golden-wishes_15s_1080p_6mbps",
-      "poster": "assets/posters/HB-GOLD-002_golden-wishes_15s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-GOLD-002_golden-wishes_15s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/05_Golden/HB-GOLD-002_golden-wishes_15s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/05_Golden/HB-GOLD-002_golden-wishes_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "15 сек"
     },
@@ -363,8 +377,8 @@ window.birthdayCatalog = {
       "seriesId": "05_golden",
       "seriesTitle": "Золотой день рождения",
       "baseFile": "HB-GOLD-003_elegant-woman_15s_1080p_6mbps",
-      "poster": "assets/posters/HB-GOLD-003_elegant-woman_15s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-GOLD-003_elegant-woman_15s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/05_Golden/HB-GOLD-003_elegant-woman_15s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/05_Golden/HB-GOLD-003_elegant-woman_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "15 сек"
     },
@@ -375,8 +389,8 @@ window.birthdayCatalog = {
       "seriesId": "05_golden",
       "seriesTitle": "Золотой день рождения",
       "baseFile": "HB-GOLD-004_colleague-premium_15s_1080p_6mbps",
-      "poster": "assets/posters/HB-GOLD-004_colleague-premium_15s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-GOLD-004_colleague-premium_15s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/05_Golden/HB-GOLD-004_colleague-premium_15s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/05_Golden/HB-GOLD-004_colleague-premium_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "15 сек"
     },
@@ -387,8 +401,8 @@ window.birthdayCatalog = {
       "seriesId": "05_golden",
       "seriesTitle": "Золотой день рождения",
       "baseFile": "HB-GOLD-005_best-moments_15s_1080p_6mbps",
-      "poster": "assets/posters/HB-GOLD-005_best-moments_15s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-GOLD-005_best-moments_15s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/05_Golden/HB-GOLD-005_best-moments_15s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/05_Golden/HB-GOLD-005_best-moments_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "15 сек"
     },
@@ -399,8 +413,8 @@ window.birthdayCatalog = {
       "seriesId": "05_golden",
       "seriesTitle": "Золотой день рождения",
       "baseFile": "HB-GOLD-006_luxury-short_15s_1080p_6mbps",
-      "poster": "assets/posters/HB-GOLD-006_luxury-short_15s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-GOLD-006_luxury-short_15s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/05_Golden/HB-GOLD-006_luxury-short_15s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/05_Golden/HB-GOLD-006_luxury-short_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "15 сек"
     },
@@ -411,8 +425,8 @@ window.birthdayCatalog = {
       "seriesId": "06_cosmic",
       "seriesTitle": "Космический день рождения",
       "baseFile": "HB-COS-001_your-universe_8s_1080p_6mbps",
-      "poster": "assets/posters/HB-COS-001_your-universe_8s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-COS-001_your-universe_8s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/06_Cosmic/HB-COS-001_your-universe_8s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/06_Cosmic/HB-COS-001_your-universe_8s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "8 сек"
     },
@@ -423,8 +437,8 @@ window.birthdayCatalog = {
       "seriesId": "06_cosmic",
       "seriesTitle": "Космический день рождения",
       "baseFile": "HB-COS-002_star-wish_8s_1080p_6mbps",
-      "poster": "assets/posters/HB-COS-002_star-wish_8s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-COS-002_star-wish_8s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/06_Cosmic/HB-COS-002_star-wish_8s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/06_Cosmic/HB-COS-002_star-wish_8s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "8 сек"
     },
@@ -435,8 +449,8 @@ window.birthdayCatalog = {
       "seriesId": "06_cosmic",
       "seriesTitle": "Космический день рождения",
       "baseFile": "HB-COS-003_cosmic-dreams_8s_1080p_6mbps",
-      "poster": "assets/posters/HB-COS-003_cosmic-dreams_8s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-COS-003_cosmic-dreams_8s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/06_Cosmic/HB-COS-003_cosmic-dreams_8s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/06_Cosmic/HB-COS-003_cosmic-dreams_8s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "8 сек"
     },
@@ -447,8 +461,8 @@ window.birthdayCatalog = {
       "seriesId": "06_cosmic",
       "seriesTitle": "Космический день рождения",
       "baseFile": "HB-COS-004_birthday-orbit_8s_1080p_6mbps",
-      "poster": "assets/posters/HB-COS-004_birthday-orbit_8s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-COS-004_birthday-orbit_8s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/06_Cosmic/HB-COS-004_birthday-orbit_8s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/06_Cosmic/HB-COS-004_birthday-orbit_8s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "8 сек"
     },
@@ -459,8 +473,8 @@ window.birthdayCatalog = {
       "seriesId": "06_cosmic",
       "seriesTitle": "Космический день рождения",
       "baseFile": "HB-COS-005_galaxy-of-joy_8s_1080p_6mbps",
-      "poster": "assets/posters/HB-COS-005_galaxy-of-joy_8s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-COS-005_galaxy-of-joy_8s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/06_Cosmic/HB-COS-005_galaxy-of-joy_8s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/06_Cosmic/HB-COS-005_galaxy-of-joy_8s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "8 сек"
     },
@@ -471,8 +485,8 @@ window.birthdayCatalog = {
       "seriesId": "06_cosmic",
       "seriesTitle": "Космический день рождения",
       "baseFile": "HB-COS-006_new-planet_8s_1080p_6mbps",
-      "poster": "assets/posters/HB-COS-006_new-planet_8s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-COS-006_new-planet_8s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/06_Cosmic/HB-COS-006_new-planet_8s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/06_Cosmic/HB-COS-006_new-planet_8s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "8 сек"
     },
@@ -483,8 +497,8 @@ window.birthdayCatalog = {
       "seriesId": "07_cat_delivery",
       "seriesTitle": "Котик-доставщик",
       "baseFile": "HB-CATD-001_delivery-of-joy_10s_1080p_6mbps",
-      "poster": "assets/posters/HB-CATD-001_delivery-of-joy_10s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-CATD-001_delivery-of-joy_10s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/07_Cat_Delivery/HB-CATD-001_delivery-of-joy_10s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/07_Cat_Delivery/HB-CATD-001_delivery-of-joy_10s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "10 сек"
     },
@@ -495,8 +509,8 @@ window.birthdayCatalog = {
       "seriesId": "07_cat_delivery",
       "seriesTitle": "Котик-доставщик",
       "baseFile": "HB-CATD-002_meow-express_10s_1080p_6mbps",
-      "poster": "assets/posters/HB-CATD-002_meow-express_10s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-CATD-002_meow-express_10s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/07_Cat_Delivery/HB-CATD-002_meow-express_10s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/07_Cat_Delivery/HB-CATD-002_meow-express_10s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "10 сек"
     },
@@ -507,8 +521,8 @@ window.birthdayCatalog = {
       "seriesId": "07_cat_delivery",
       "seriesTitle": "Котик-доставщик",
       "baseFile": "HB-CATD-003_gift-for-you_10s_1080p_6mbps",
-      "poster": "assets/posters/HB-CATD-003_gift-for-you_10s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-CATD-003_gift-for-you_10s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/07_Cat_Delivery/HB-CATD-003_gift-for-you_10s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/07_Cat_Delivery/HB-CATD-003_gift-for-you_10s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "10 сек"
     },
@@ -519,8 +533,8 @@ window.birthdayCatalog = {
       "seriesId": "07_cat_delivery",
       "seriesTitle": "Котик-доставщик",
       "baseFile": "HB-CATD-004_paws-and-smiles_10s_1080p_6mbps",
-      "poster": "assets/posters/HB-CATD-004_paws-and-smiles_10s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-CATD-004_paws-and-smiles_10s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/07_Cat_Delivery/HB-CATD-004_paws-and-smiles_10s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/07_Cat_Delivery/HB-CATD-004_paws-and-smiles_10s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "10 сек"
     },
@@ -531,8 +545,8 @@ window.birthdayCatalog = {
       "seriesId": "07_cat_delivery",
       "seriesTitle": "Котик-доставщик",
       "baseFile": "HB-CATD-005_for-child_10s_1080p_6mbps",
-      "poster": "assets/posters/HB-CATD-005_for-child_10s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-CATD-005_for-child_10s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/07_Cat_Delivery/HB-CATD-005_for-child_10s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/07_Cat_Delivery/HB-CATD-005_for-child_10s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "10 сек"
     },
@@ -543,8 +557,8 @@ window.birthdayCatalog = {
       "seriesId": "07_cat_delivery",
       "seriesTitle": "Котик-доставщик",
       "baseFile": "HB-CATD-006_birthday-package_10s_1080p_6mbps",
-      "poster": "assets/posters/HB-CATD-006_birthday-package_10s_1080p_6mbps_poster_720x1280.webp",
-      "video": "assets/videos/HB-CATD-006_birthday-package_10s_1080p_6mbps_site-preview_720x1280.mp4",
+      "poster": "assets/posters/01_Birthday/07_Cat_Delivery/HB-CATD-006_birthday-package_10s_1080p_6mbps_poster_720x1280.webp",
+      "video": "assets/videos/01_Birthday/07_Cat_Delivery/HB-CATD-006_birthday-package_10s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
       "duration": "10 сек"
     }
