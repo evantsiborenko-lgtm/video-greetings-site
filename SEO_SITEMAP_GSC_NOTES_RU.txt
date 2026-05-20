@@ -32,3 +32,12 @@ SEO / Sitemap / Google Search Console
 Важно:
 - sitemap.xml сейчас содержит главную страницу сайта, потому что сайт одностраничный.
 - Если позже появятся отдельные страницы /birthday, /new-year и т.п., их нужно добавить в sitemap.xml.
+
+
+Google Search Console meta verification также добавлен в index.html:
+
+<meta name="google-site-verification" content="JxxN1bzo-d4aY1_KlOf_QxFXhHe1kUJOyVWIpzNzNf0" />
+
+Теперь доступны оба способа подтверждения:
+1. HTML-файл: googlec0bdf766a3da086f.html
+2. Meta-тег в head страницы
