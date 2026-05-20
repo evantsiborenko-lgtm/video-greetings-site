@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
-
+            
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 // Adjust for fixed header height (approx 70px)
@@ -23,13 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. FAQ Accordion (Accessible)
     const faqItems = document.querySelectorAll('.faq-item');
-
+    
     faqItems.forEach(item => {
         const questionBtn = item.querySelector('.faq-question');
-
+        
         questionBtn.addEventListener('click', () => {
             const isExpanded = questionBtn.getAttribute('aria-expanded') === 'true';
-
+            
             // Close all other items
             faqItems.forEach(otherItem => {
                 if (otherItem !== item) {
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 }
             });
-
+            
             // Toggle current item
             if (isExpanded) {
                 item.classList.remove('active');
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (birthdayCatBtn && birthdayDetail) {
         birthdayCatBtn.addEventListener('click', () => {
             const isExpanded = birthdayCatBtn.getAttribute('aria-expanded') === 'true';
-
+            
             if (isExpanded) {
                 birthdayCatBtn.setAttribute('aria-expanded', 'false');
                 birthdayCatBtn.classList.remove('active');
@@ -74,15 +74,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 5. Catalog Series Accordion
     const seriesItems = document.querySelectorAll('.series-item');
-
+    
     seriesItems.forEach(item => {
         const headerBtn = item.querySelector('.series-header');
         const content = item.querySelector('.series-content');
-
+        
         if (headerBtn && content) {
             headerBtn.addEventListener('click', () => {
                 const isExpanded = headerBtn.getAttribute('aria-expanded') === 'true';
-
+                
                 // Toggle current item
                 if (isExpanded) {
                     item.classList.remove('active');
