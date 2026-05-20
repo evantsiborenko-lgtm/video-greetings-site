@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
-
+            
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 // Adjust for fixed header height (approx 70px)
@@ -25,13 +25,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. FAQ Accordion (Accessible)
     const faqItems = document.querySelectorAll('.faq-item');
-
+    
     faqItems.forEach(item => {
         const questionBtn = item.querySelector('.faq-question');
-
+        
         questionBtn.addEventListener('click', () => {
             const isExpanded = questionBtn.getAttribute('aria-expanded') === 'true';
-
+            
             // Close all other items
             faqItems.forEach(otherItem => {
                 if (otherItem !== item) {
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 }
             });
-
+            
             // Toggle current item
             if (isExpanded) {
                 item.classList.remove('active');
@@ -100,10 +100,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 2. Birthday Detail View
         let seriesListHTML = '<div class="series-list">';
-
+        
         data.series.forEach((series, index) => {
             const seriesSkus = data.skus.filter(sku => sku.seriesId === series.id);
-
+            
             let skusHTML = '<div class="sku-grid">';
             seriesSkus.forEach(sku => {
                 skusHTML += `
@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Render everything
         container.innerHTML += categoriesHTML + birthdayDetailHTML;
-
+        
         initCatalogInteractions();
     }
 
@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Hover for video preview on Desktop
         const isMobile = window.matchMedia("(max-width: 768px)").matches;
-
+        
         if (!isMobile) {
             document.querySelectorAll('.sku-visual').forEach(visual => {
                 visual.addEventListener('mouseenter', function() {
