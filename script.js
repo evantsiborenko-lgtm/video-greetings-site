@@ -184,39 +184,66 @@ document.addEventListener('DOMContentLoaded', () => {
             el.addEventListener('contextmenu', e => e.preventDefault());
         });
 
-        // Hover for video preview on Desktop
-        const isMobile = window.matchMedia("(max-width: 768px)").matches;
-        
-        if (!isMobile) {
-            document.querySelectorAll('.sku-visual').forEach(visual => {
-                visual.addEventListener('mouseenter', function() {
-                    const videoSrc = this.getAttribute('data-video');
-                    if (!this.querySelector('video')) {
-                        const video = document.createElement('video');
-                        video.src = videoSrc;
-                        video.muted = true;
-                        video.loop = true;
-                        video.playsInline = true;
-                        video.preload = "none";
-                        video.style.cssText = "position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:2;";
-                        // Disable controls and pip
-                        video.setAttribute('controlsList', 'nodownload');
-                        video.setAttribute('disablePictureInPicture', '');
-                        video.addEventListener('contextmenu', e => e.preventDefault());
-                        this.appendChild(video);
-                        video.play().catch(e => console.log('Autoplay blocked:', e));
-                    } else {
-                        this.querySelector('video').play().catch(e => {});
-                    }
-                });
+        // Hover preview for devices that really support hover (desktop / mouse / trackpad).
+        // Do not rely on screen width: some tablets have a mouse, and some small windows are still desktop.
+        const canHoverPreview = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
-                visual.addEventListener('mouseleave', function() {
-                    const video = this.querySelector('video');
+        function ensurePreviewVideo(visual) {
+            const videoSrc = visual.getAttribute('data-video');
+            if (!videoSrc) return null;
+
+            let video = visual.querySelector('video.site-preview-video');
+            if (!video) {
+                video = document.createElement('video');
+                video.className = 'site-preview-video';
+
+                // Attributes first: improves autoplay reliability in Chrome/Safari.
+                video.muted = true;
+                video.defaultMuted = true;
+                video.loop = true;
+                video.playsInline = true;
+                video.autoplay = true;
+                video.preload = 'metadata';
+                video.setAttribute('muted', '');
+                video.setAttribute('playsinline', '');
+                video.setAttribute('webkit-playsinline', '');
+                video.setAttribute('controlsList', 'nodownload');
+                video.setAttribute('disablePictureInPicture', '');
+                video.setAttribute('aria-hidden', 'true');
+                video.addEventListener('contextmenu', e => e.preventDefault());
+                video.style.cssText = 'position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:2; background:#000;';
+
+                video.src = videoSrc;
+                visual.appendChild(video);
+            }
+            return video;
+        }
+
+        if (canHoverPreview) {
+            document.querySelectorAll('.sku-visual').forEach(visual => {
+                const startPreview = function() {
+                    const video = ensurePreviewVideo(visual);
+                    if (!video) return;
+                    video.currentTime = 0;
+                    video.load();
+                    const playPromise = video.play();
+                    if (playPromise && typeof playPromise.catch === 'function') {
+                        playPromise.catch(err => console.log('Preview autoplay blocked:', err));
+                    }
+                };
+
+                const stopPreview = function() {
+                    const video = visual.querySelector('video.site-preview-video');
                     if (video) {
                         video.pause();
                         video.currentTime = 0;
                     }
-                });
+                };
+
+                visual.addEventListener('pointerenter', startPreview);
+                visual.addEventListener('mouseenter', startPreview);
+                visual.addEventListener('pointerleave', stopPreview);
+                visual.addEventListener('mouseleave', stopPreview);
             });
         }
 
