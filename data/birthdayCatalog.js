@@ -68,7 +68,7 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/01_Storybook/HB-SB-001_magic-wish_15s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/01_Storybook/HB-SB-001_magic-wish_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "12 сек"
+      "duration": "15 сек"
     },
     {
       "id": "HB-SB-002",

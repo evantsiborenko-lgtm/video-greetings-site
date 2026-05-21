@@ -278,6 +278,12 @@ a {
     top: 25px;
 }
 
+.search-button:disabled {
+    opacity: 0.34;
+    cursor: default;
+    pointer-events: none;
+}
+
 .music-toggle::before,
 .music-toggle::after {
     content: "";
@@ -1453,6 +1459,10 @@ a {
     border-radius: 20px;
     background: #fff;
     border: 1px solid var(--line);
+}
+
+.cart-empty[hidden] {
+    display: none !important;
 }
 
 .cart-empty p {

@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const firstSku = skusBySeries[series.id]?.[0];
             return `
                 <article class="series-tile">
-                    <button class="series-tile-preview preview-btn" type="button" data-video="${escapeHtml(firstSku?.video)}" aria-label="Смотреть пример серии ${escapeHtml(series.title)}">
+                    <button class="series-tile-preview preview-btn" type="button" data-sku="${escapeHtml(firstSku?.id)}" data-video="${escapeHtml(firstSku?.video)}" aria-label="Смотреть пример серии ${escapeHtml(series.title)}">
                         <img src="${escapeHtml(firstSku?.poster)}" alt="${escapeHtml(series.title)}" loading="lazy" decoding="async">
                         <span class="play-small" aria-hidden="true"></span>
                     </button>
@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <h4>${escapeHtml(sku.title)}</h4>
                         <p>${escapeHtml(sku.seriesTitle)}</p>
                         <div class="sku-actions">
-                            <button class="btn btn-light btn-sm preview-btn" type="button" data-video="${escapeHtml(sku.video)}">Смотреть пример</button>
+                            <button class="btn btn-light btn-sm preview-btn" type="button" data-sku="${escapeHtml(sku.id)}" data-video="${escapeHtml(sku.video)}">Смотреть пример</button>
                             <button class="btn btn-dark btn-sm" type="button" data-add-sku="${escapeHtml(sku.id)}">В корзину — 49 ₽</button>
                             <button class="btn btn-ghost btn-sm" type="button" data-add-sku-personal="${escapeHtml(sku.id)}">С именем +299 ₽</button>
                         </div>
@@ -300,6 +300,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function initVideoModal() {
         const modal = document.getElementById('video-modal');
         const modalVideo = document.getElementById('modal-video');
+        const modalAddButton = modal?.querySelector('[data-modal-add-sku]');
+        let modalSkuId = '';
         if (!modal || !modalVideo) return;
 
         document.addEventListener('click', event => {
@@ -310,11 +312,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 event.preventDefault();
                 stopMusic();
                 focusReturnElement = previewButton;
+                modalSkuId = previewButton.getAttribute('data-sku') || catalog.skus.find(sku => sku.video === videoSrc)?.id || '';
+                if (modalAddButton) {
+                    modalAddButton.disabled = !modalSkuId;
+                    modalAddButton.textContent = modalSkuId ? 'В корзину — 49 ₽' : 'Открыть корзину';
+                }
                 modalVideo.src = videoSrc;
                 modal.hidden = false;
                 document.body.classList.add('modal-open');
                 modalVideo.play().catch(() => {});
                 modal.querySelector('[data-close-modal]')?.focus();
+                return;
+            }
+
+            if (event.target.closest('[data-modal-add-sku]')) {
+                event.preventDefault();
+                if (modalSkuId) {
+                    addSingle(modalSkuId);
+                    closeModal(false);
+                } else {
+                    closeModal(false);
+                    openCart();
+                }
                 return;
             }
 
@@ -327,13 +346,14 @@ document.addEventListener('DOMContentLoaded', () => {
             if (event.key === 'Escape' && !modal.hidden) closeModal();
         });
 
-        function closeModal() {
+        function closeModal(restoreFocus = true) {
             modal.hidden = true;
             document.body.classList.remove('modal-open');
             modalVideo.pause();
             modalVideo.removeAttribute('src');
             modalVideo.load();
-            if (focusReturnElement) focusReturnElement.focus();
+            modalSkuId = '';
+            if (restoreFocus && focusReturnElement) focusReturnElement.focus();
         }
     }
 
