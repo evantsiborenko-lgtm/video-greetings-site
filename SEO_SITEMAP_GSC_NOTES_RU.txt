@@ -41,3 +41,15 @@ Google Search Console meta verification также добавлен в index.htm
 Теперь доступны оба способа подтверждения:
 1. HTML-файл: googlec0bdf766a3da086f.html
 2. Meta-тег в head страницы
+
+
+Yandex Webmaster verification добавлен в index.html:
+
+<meta name="yandex-verification" content="d38da1a6f7dc7a4b" />
+
+После публикации сайта:
+1. Открой главную страницу.
+2. Посмотри исходный код страницы и убедись, что yandex-verification есть в <head>.
+3. Вернись в Яндекс Вебмастер и нажми “Проверить”.
+4. После подтверждения добавь Sitemap:
+   https://evantsiborenko-lgtm.github.io/video-greetings-site/sitemap.xml
