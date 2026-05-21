@@ -109,11 +109,16 @@
             <div class="logo">KVSemenov</div>
             <nav class="nav">
                 <a href="#catalog">Каталог</a>
-                <a href="#packages">Цены</a>
-                <a href="#how-to-order">Как заказать</a>
+                <a href="#packages">Пакеты</a>
+                <a href="#payment">Оплата</a>
+                <a href="#custom-ai">AI на заказ</a>
                 <a href="#faq">FAQ</a>
             </nav>
-            <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary header-cta">Заказать</a>
+            <div class="future-actions" aria-hidden="true">
+                <button type="button" class="icon-btn" disabled>🛒</button>
+                <button type="button" class="btn btn-secondary" disabled>Войти</button>
+            </div>
+            <a href="#packages" class="btn btn-primary header-cta">Выбрать</a>
         </div>
     </header>
 
@@ -122,7 +127,7 @@
         <section id="hero" class="hero">
             <div class="container hero-content">
                 <h1 class="hero-title"><span class="highlight">Видео-открытки</span><br>для праздников</h1>
-                <p class="hero-subtitle">Готовые MP4-ролики для Telegram, WhatsApp и соцсетей. Выберите открытку из каталога или закажите персональную AI-открытку.</p>
+                <p class="hero-subtitle">Готовые MP4-ролики для Telegram, WhatsApp и соцсетей. Выберите открытку из каталога, оплатите по СБП и получите ссылку на скачивание.</p>
                 <div class="hero-buttons">
                     <a href="#catalog" class="btn btn-primary btn-large">Смотреть каталог</a>
                     <a href="#custom-ai" class="btn btn-secondary btn-large">Заказать индивидуальную открытку</a>
@@ -143,42 +148,99 @@
                 <!-- 3. Packages section -->
         <section id="packages" class="packages section">
             <div class="container">
-                <h2 class="section-title">Тарифы</h2>
-                <div class="packages-grid">
+                <h2 class="section-title">Пакеты и цены</h2>
+                <p class="section-lead">Можно купить один ролик, серию, готовую подборку из 12 роликов или полный набор.</p>
+                <div class="packages-grid packages-grid-wide">
                     <div class="package-card">
+                        <div class="package-icon">🎬</div>
                         <h3>1 готовый ролик</h3>
                         <div class="price">49 ₽</div>
                         <ul class="package-features">
-                            <li>Один ролик из каталога</li>
-                            <li>Без изменений текста</li>
-                            <li>Мгновенная доставка</li>
+                            <li>Один MP4-ролик из каталога</li>
+                            <li>Финальная версия без watermark</li>
+                            <li>Отправка в Telegram или на email</li>
                         </ul>
                         <a href="#catalog" class="btn btn-secondary">Выбрать в каталоге</a>
                     </div>
-                    <div class="package-card featured">
-                        <div class="popular-badge">Популярно</div>
+                    <div class="package-card">
+                        <div class="package-icon">✨</div>
                         <h3>Серия из 6 роликов</h3>
                         <div class="price">199 ₽</div>
                         <ul class="package-features">
-                            <li>6 роликов одного стиля</li>
-                            <li>Без изменений текста</li>
-                            <li>Экономия по сравнению со штучной покупкой</li>
+                            <li>6 роликов одного визуального стиля</li>
+                            <li>Удобно для выбора под настроение</li>
+                            <li>ZIP-ссылка на скачивание</li>
                         </ul>
-                        <a href="#birthday-series" class="btn btn-primary">Выбрать серию</a>
+                        <a href="#birthday-series" class="btn btn-secondary">Выбрать серию</a>
+                    </div>
+                    <div class="package-card featured">
+                        <div class="popular-badge">Подборка</div>
+                        <div class="package-icon">👑</div>
+                        <h3>Premium Pack</h3>
+                        <div class="package-subtitle">12 элегантных роликов</div>
+                        <div class="price">299 ₽</div>
+                        <ul class="package-features">
+                            <li>Golden + Cake + Magic Gift</li>
+                            <li>Для взрослых, коллег и стильных поздравлений</li>
+                            <li>Готовый ZIP-архив</li>
+                        </ul>
+                        <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Заказать Premium Pack</a>
                     </div>
                     <div class="package-card">
+                        <div class="package-icon">🐾</div>
+                        <h3>Cats Pack</h3>
+                        <div class="package-subtitle">12 роликов с котиками</div>
+                        <div class="price">299 ₽</div>
+                        <ul class="package-features">
+                            <li>Котик с подарком + котик-доставщик</li>
+                            <li>Милые и дружеские поздравления</li>
+                            <li>Готовый ZIP-архив</li>
+                        </ul>
+                        <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Заказать Cats Pack</a>
+                    </div>
+                    <div class="package-card full-pack-card">
+                        <div class="package-icon">🎁</div>
                         <h3>Полный набор</h3>
+                        <div class="package-subtitle">42 видео-открытки</div>
                         <div class="price">490 ₽</div>
                         <ul class="package-features">
-                            <li>Все 42 ролика (7 серий)</li>
-                            <li>На все случаи жизни</li>
-                            <li>Максимальная выгода</li>
+                            <li>Все 7 серий в одном архиве</li>
+                            <li>Для родных, друзей, коллег и детей</li>
+                            <li>Лучшая цена за весь комплект</li>
                         </ul>
-                        <a href="#birthday-full-pack" class="btn btn-secondary">Купить набор</a>
+                        <a href="#birthday-full-pack" class="btn btn-secondary">Смотреть набор</a>
+                    </div>
+                    <div class="package-card">
+                        <div class="package-icon">✍️</div>
+                        <h3>Персонализация</h3>
+                        <div class="price">+299 ₽</div>
+                        <ul class="package-features">
+                            <li>Имя или свой текст</li>
+                            <li>Отдельный финальный MP4</li>
+                            <li>Согласование в Telegram</li>
+                        </ul>
+                        <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Заказать персонализацию</a>
                     </div>
                 </div>
-                <div style="text-align: center; margin-top: 30px;">
-                    <p><strong>Персонализация (добавление имени или своего текста): +299 ₽ к стоимости заказа.</strong></p>
+            </div>
+        </section>
+
+        <section id="payment" class="payment section">
+            <div class="container payment-grid">
+                <div class="payment-copy">
+                    <span class="section-kicker">Оплата</span>
+                    <h2 class="section-title align-left">Оплата по СБП</h2>
+                    <p class="payment-desc">После выбора ролика или пакета напишите мне в Telegram. Оплатить можно по ссылке СБП или через QR-код. После оплаты отправлю финальный файл или ссылку на скачивание в Telegram или на email.</p>
+                    <div class="payment-actions">
+                        <a href="https://c2c.cbrpay.ru/AS1I002E5DAN3MRN8KQP9R97693V67MF" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">Оплатить по СБП</a>
+                        <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-large">Написать в Telegram</a>
+                    </div>
+                    <p class="payment-note">Работаю официально как самозанятый, могу предоставить чек. Ссылка на скачивание обычно отправляется после подтверждения оплаты.</p>
+                </div>
+                <div class="payment-qr-card">
+                    <img src="assets/icons/payment_sbp_qr.png" alt="QR-код для оплаты через СБП" loading="lazy" decoding="async">
+                    <strong>QR-код оплаты</strong>
+                    <span>Сканируйте камерой телефона или приложением банка</span>
                 </div>
             </div>
         </section>
@@ -190,18 +252,18 @@
                 <div class="steps-grid">
                     <div class="step-card">
                         <div class="step-number">1</div>
-                        <h3 class="step-title">Выберите пример или идею</h3>
-                        <p class="step-desc">Посмотрите галерею или придумайте свою концепцию.</p>
+                        <h3 class="step-title">Выберите ролик или пакет</h3>
+                        <p class="step-desc">Один ролик, серия из 6, подборка из 12 или полный набор 42 ролика.</p>
                     </div>
                     <div class="step-card">
                         <div class="step-number">2</div>
                         <h3 class="step-title">Напишите в Telegram</h3>
-                        <p class="step-desc">Свяжитесь со мной, обсудим детали и пожелания.</p>
+                        <p class="step-desc">Отправьте выбранный SKU или название пакета. Я подтвержу наличие и сумму.</p>
                     </div>
                     <div class="step-card">
                         <div class="step-number">3</div>
-                        <h3 class="step-title">Получите готовое видео</h3>
-                        <p class="step-desc">Наслаждайтесь результатом и радуйте близких!</p>
+                        <h3 class="step-title">Оплатите и получите ссылку</h3>
+                        <p class="step-desc">Оплата по СБП. После оплаты отправлю MP4 или ссылку на Google Drive.</p>
                     </div>
                 </div>
             </div>
@@ -309,9 +371,12 @@
         <!-- 6. Final CTA section -->
         <section class="final-cta section">
             <div class="container cta-content">
-                <h2 class="cta-title">Хотите такую видео-открытку?</h2>
-                <p class="cta-desc">Удивите своих близких, друзей или коллег уникальным кинематографичным поздравлением!</p>
-                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large cta-btn">Написать в Telegram</a>
+                <h2 class="cta-title">Выберите открытку и оплатите по СБП</h2>
+                <p class="cta-desc">Готовые ролики, серии и наборы уже подготовлены. Напишите в Telegram, выберите вариант и получите ссылку на скачивание после оплаты.</p>
+                <div class="hero-buttons">
+                    <a href="#catalog" class="btn btn-secondary btn-large">Смотреть каталог</a>
+                    <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large cta-btn">Написать в Telegram</a>
+                </div>
             </div>
         </section>
     </main>
@@ -337,7 +402,8 @@
                 <video id="modal-video" controls controlsList="nodownload" disablePictureInPicture playsinline preload="none"></video>
             </div>
             <div class="modal-actions">
-                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Купить в Telegram</a>
+                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Написать в Telegram</a>
+                <a href="https://c2c.cbrpay.ru/AS1I002E5DAN3MRN8KQP9R97693V67MF" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Оплатить по СБП</a>
             </div>
         </div>
     </div>

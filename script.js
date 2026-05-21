@@ -1,3 +1,5 @@
+const PAYMENT_URL = 'https://c2c.cbrpay.ru/AS1I002E5DAN3MRN8KQP9R97693V67MF';
+
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Smooth Scrolling for Navigation Links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -119,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <span class="sku-price">${sku.price} ₽</span>
                             <div class="sku-actions">
                                 <button class="btn btn-secondary btn-sm preview-btn" data-video="${sku.video}">Смотреть пример</button>
-                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Купить ролик — 49 ₽</a>
+                                <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Заказать ролик — 49 ₽</a>
                                 <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">С именем / своим текстом +299 ₽</a>
                             </div>
                         </div>
@@ -140,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div id="series-content-${index}" class="series-content" role="region" aria-labelledby="series-btn-${index}" hidden>
                         ${skusHTML}
                         <div style="text-align:center; margin-top: 20px;">
-                            <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Купить серию — 199 ₽</a>
+                            <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Заказать серию — 199 ₽</a>
                         </div>
                     </div>
                 </div>
@@ -156,6 +158,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="detail-pricing">
                         <span>1 готовый ролик — <strong>49 ₽</strong></span>
                         <span>Серия из 6 роликов — <strong>199 ₽</strong></span>
+                        <span>Premium Pack 12 роликов — <strong>299 ₽</strong></span>
+                        <span>Cats Pack 12 роликов — <strong>299 ₽</strong></span>
                         <span>Полный набор 42 ролика — <strong>490 ₽</strong></span>
                         <span>Персонализация имени/текста — <strong>+299 ₽</strong></span>
                     </div>
@@ -167,7 +171,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         <p>Все 7 серий в одном наборе. Подходит, если хотите иметь открытки на разные случаи: для родных, друзей, коллег, детей и тёплых личных поздравлений.</p>
                         <span class="full-set-price">490 ₽</span>
                     </div>
-                    <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">Купить полный набор</a>
+                    <div class="hero-buttons">
+                        <a href="https://t.me/KVSemenov" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">Заказать полный набор</a>
+                        <a href="https://c2c.cbrpay.ru/AS1I002E5DAN3MRN8KQP9R97693V67MF" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-large">Оплатить по СБП</a>
+                    </div>
                 </div>
             </div>
         `;

@@ -53,3 +53,9 @@ Yandex Webmaster verification добавлен в index.html:
 3. Вернись в Яндекс Вебмастер и нажми “Проверить”.
 4. После подтверждения добавь Sitemap:
    https://evantsiborenko-lgtm.github.io/video-greetings-site/sitemap.xml
+
+
+Hover preview fix:
+- Desktop hover now uses `(hover: hover) and (pointer: fine)` instead of width <= 768.
+- Video preview sets muted/autoplay/playsinline attributes before play() for better browser compatibility.
+- Video src is still assigned only on hover, so the page remains lightweight.
