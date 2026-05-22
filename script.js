@@ -39,6 +39,21 @@ const PACKAGE_DEFS = {
 };
 
 const CART_STORAGE_KEY = 'kvs_video_greetings_cart_v2';
+const METRIKA_ID = 109374145;
+
+
+function trackGoal(goalName, params = {}) {
+    if (typeof window.ym === 'function') {
+        try {
+            window.ym(METRIKA_ID, 'reachGoal', goalName, params);
+        } catch (error) {}
+    }
+}
+
+function pushEcommerceEvent(eventName, payload = {}) {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ ecommerce: { event: eventName, ...payload } });
+}
 
 function money(value) {
     return `${value.toLocaleString('ru-RU')} ₽`;
@@ -99,10 +114,30 @@ document.addEventListener('DOMContentLoaded', () => {
     initNavigation();
     initFaq();
     initMusicToggle();
+    initMetrikaGoals();
     renderCatalog();
     initCartActions();
     initVideoModal();
     updateCartUI();
+
+
+    function initMetrikaGoals() {
+        document.addEventListener('click', event => {
+            const link = event.target.closest('a');
+            if (!link) return;
+            const href = link.getAttribute('href') || '';
+            if (href === PAYMENT_URL) {
+                trackGoal('click_sbp_payment', { total: getCartTotal(), count: getCartCount() });
+                pushEcommerceEvent('checkout_start', { value: getCartTotal(), currency: 'RUB' });
+            }
+            if (href === TELEGRAM_URL) {
+                trackGoal('click_telegram', { total: getCartTotal(), count: getCartCount() });
+            }
+            if (href === MAX_URL) {
+                trackGoal('click_max', { total: getCartTotal(), count: getCartCount() });
+            }
+        });
+    }
 
     function initNavigation() {
         document.querySelectorAll('a[href^="#"], [data-scroll-target]').forEach(control => {
@@ -325,6 +360,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 modal.hidden = false;
                 document.body.classList.add('modal-open');
                 modalVideo.play().catch(() => {});
+                trackGoal('video_preview_open', { sku: modalSkuId, video: videoSrc });
                 modal.querySelector('[data-close-modal]')?.focus();
                 return;
             }
@@ -434,6 +470,8 @@ document.addEventListener('DOMContentLoaded', () => {
         cart.singles.push(skuId);
         saveCart(cart);
         updateCartUI();
+        trackGoal('add_sku_to_cart', { sku: skuId, total: getCartTotal(), count: getCartCount() });
+        pushEcommerceEvent('add_to_cart', { items: [{ id: skuId, quantity: 1, price: PRICES.single }], value: PRICES.single, currency: 'RUB' });
         playCartTheme();
         if (notify) showToast('Ролик добавлен в корзину');
         openCart();
@@ -449,6 +487,8 @@ document.addEventListener('DOMContentLoaded', () => {
         cart.series.push(seriesId);
         saveCart(cart);
         updateCartUI();
+        trackGoal('add_series_to_cart', { series: seriesId, total: getCartTotal(), count: getCartCount() });
+        pushEcommerceEvent('add_to_cart', { items: [{ id: seriesId, quantity: 1, price: PRICES.series }], value: PRICES.series, currency: 'RUB' });
         playCartTheme();
         showToast('Серия добавлена в корзину');
         openCart();
@@ -464,6 +504,9 @@ document.addEventListener('DOMContentLoaded', () => {
         cart.packages.push(packageId);
         saveCart(cart);
         updateCartUI();
+        const packageDef = PACKAGE_DEFS[packageId];
+        trackGoal('add_package_to_cart', { package: packageId, total: getCartTotal(), count: getCartCount() });
+        pushEcommerceEvent('add_to_cart', { items: [{ id: packageId, quantity: 1, price: packageDef.price }], value: packageDef.price, currency: 'RUB' });
         playCartTheme();
         showToast('Пакет добавлен в корзину');
         openCart();
@@ -478,6 +521,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cart.personalization = true;
         saveCart(cart);
         updateCartUI();
+        trackGoal('add_personalization', { total: getCartTotal(), count: getCartCount() });
         if (notify) showToast('Персонализация добавлена');
         openCart();
     }
@@ -489,6 +533,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (type === 'personalization') cart.personalization = false;
         saveCart(cart);
         updateCartUI();
+        trackGoal('remove_cart_item', { type, id, total: getCartTotal(), count: getCartCount() });
     }
 
     function calculateSinglesPrice(count) {
@@ -564,7 +609,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <article class="cart-line">
                     <div>
                         <strong>Отдельные ролики</strong>
-                        <span>${cart.singles.length} SKU</span>
+                        <span>${cart.singles.length} ролик(а)</span>
                         ${discountNote}
                         <ul>${singleRows}</ul>
                     </div>
@@ -597,7 +642,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div>
                         <strong>${escapeHtml(packageDef.title)}</strong>
                         <span>${escapeHtml(packageDef.subtitle)}</span>
-                        <small>${skuCount} SKU</small>
+                        <small>${skuCount} роликов</small>
                     </div>
                     <b>${money(packageDef.price)}</b>
                     <button class="line-remove" type="button" data-remove-cart="package" data-id="${escapeHtml(packageId)}" aria-label="Удалить пакет"></button>
@@ -620,7 +665,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (allSkus.length) {
             const chips = allSkus.map(sku => `<span>${escapeHtml(sku.id)}</span>`).join('');
             skusContainer.innerHTML = `
-                <strong>SKU в заказе</strong>
+                <strong>Коды роликов в заказе</strong>
                 <div class="sku-chips">${chips}</div>
             `;
         }
@@ -672,6 +717,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const text = buildOrderText();
         try {
             await navigator.clipboard.writeText(text);
+            trackGoal('copy_order', { total: getCartTotal(), count: getCartCount() });
             showToast('Заказ скопирован для MAX / TG');
         } catch (error) {
             const textarea = document.createElement('textarea');
@@ -683,6 +729,7 @@ document.addEventListener('DOMContentLoaded', () => {
             textarea.select();
             document.execCommand('copy');
             textarea.remove();
+            trackGoal('copy_order', { total: getCartTotal(), count: getCartCount() });
             showToast('Заказ скопирован для MAX / TG');
         }
     }
@@ -691,6 +738,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const drawer = document.getElementById('cart-drawer');
         if (!drawer) return;
         drawer.setAttribute('aria-hidden', 'false');
+        trackGoal('open_cart', { total: getCartTotal(), count: getCartCount() });
         document.body.classList.add('cart-open');
         drawer.querySelector('[data-close-cart]')?.focus();
     }

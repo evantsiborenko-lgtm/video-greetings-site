@@ -32,3 +32,13 @@ KVSemenov Video Greetings — Apple-style cart v2.2
    - video-sitemap.xml открывается по URL /video-sitemap.xml.
 4. В Google Search Console отправить на проверку главную страницу и sitemap/video-sitemap.
 5. В Яндекс Вебмастере добавить/обновить sitemap.xml и video-sitemap.xml.
+
+
+Update v2.4 — Метрика и финальные правки:
+- Вставлен реальный ID Яндекс Метрики: 109374145.
+- Добавлены цели Метрики: video_preview_open, add_sku_to_cart, add_series_to_cart, add_package_to_cart, add_personalization, open_cart, click_sbp_payment, copy_order, click_telegram, click_max, remove_cart_item.
+- Убран некорректный embedUrl из VideoObject, оставлен contentUrl и url.
+- Заменены логотипы MAX и Telegram на новые файлы.
+- Исправлен текст «После оплаты покупатель пишет...» на клиентский вариант «После оплаты напишите...».
+- В корзине «SKU в заказе» заменено на «Коды роликов в заказе».
+- Проверен пункт меню «Пакеты и цены»: дубль удаляется автоматически при сборке, в текущей шапке оставлен один пункт.
