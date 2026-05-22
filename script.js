@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </button>
                     <div class="series-tile-info">
                         <h3>${escapeHtml(series.title)}</h3>
-                        <p>${escapeHtml(series.desc)}</p>
+                        <p>${escapeHtml(series.seoDescription || series.desc)}</p>
                         <div class="series-tile-actions">
                             <button class="btn btn-light btn-sm" type="button" data-open-series="${escapeHtml(series.id)}">Смотреть SKU</button>
                             <button class="btn btn-dark btn-sm" type="button" data-add-series="${escapeHtml(series.id)}">Серия — 199 ₽</button>
@@ -161,14 +161,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const seriesAccordions = catalog.series.map((series, index) => {
             const seriesSkus = skusBySeries[series.id] || [];
             const skuCards = seriesSkus.map(sku => `
-                <article class="sku-card" data-sku-card="${escapeHtml(sku.id)}">
+                <article class="sku-card" id="sku-${escapeHtml(sku.id)}" data-sku-card="${escapeHtml(sku.id)}">
                     <div class="sku-visual" data-video="${escapeHtml(sku.video)}">
-                        <img src="${escapeHtml(sku.poster)}" alt="${escapeHtml(sku.title)}" loading="lazy" decoding="async">
+                        <img src="${escapeHtml(sku.poster)}" alt="${escapeHtml(sku.title)} — видео-открытка с Днём рождения" loading="lazy" decoding="async">
                     </div>
                     <div class="sku-info">
                         <div class="sku-meta"><span>${escapeHtml(sku.id)}</span><span>${escapeHtml(sku.duration)}</span></div>
                         <h4>${escapeHtml(sku.title)}</h4>
-                        <p>${escapeHtml(sku.seriesTitle)}</p>
+                        <p class="sku-series-name">${escapeHtml(sku.seriesTitle)}</p>
+                        <p class="sku-description">${escapeHtml(sku.seoDescription || '')}</p>
                         <div class="sku-actions">
                             <button class="btn btn-light btn-sm preview-btn" type="button" data-sku="${escapeHtml(sku.id)}" data-video="${escapeHtml(sku.video)}">Смотреть пример</button>
                             <button class="btn btn-dark btn-sm" type="button" data-add-sku="${escapeHtml(sku.id)}">В корзину — 49 ₽</button>
@@ -183,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <button class="series-header" type="button" aria-expanded="${index === 0 ? 'true' : 'false'}" aria-controls="series-content-${index}">
                         <span>
                             <strong>${escapeHtml(String(index + 1).padStart(2, '0'))} — ${escapeHtml(series.title)}</strong>
-                            <em>${escapeHtml(series.desc)}</em>
+                            <em>${escapeHtml(series.seoDescription || series.desc)}</em>
                         </span>
                         <b>+</b>
                     </button>

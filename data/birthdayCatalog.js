@@ -6,7 +6,17 @@ window.birthdayCatalog = {
       "desc": "Сказочная, тёплая и волшебная серия для мягкого поздравления.",
       "price": 199,
       "folderName": "01_Storybook",
-      "assetsFolder": "01_Birthday/01_Storybook"
+      "assetsFolder": "01_Birthday/01_Storybook",
+      "seoDescription": "Серия MP4-видео-открыток с книгой, сказочным светом и мягкой атмосферой для тёплого поздравления с Днём рождения.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "сказочная открытка",
+        "волшебная книга"
+      ]
     },
     {
       "id": "02_magic_gift",
@@ -14,7 +24,17 @@ window.birthdayCatalog = {
       "desc": "Магический подарок, свет и чудо — универсальная праздничная серия.",
       "price": 199,
       "folderName": "02_Magic_Gift",
-      "assetsFolder": "01_Birthday/02_Magic_Gift"
+      "assetsFolder": "01_Birthday/02_Magic_Gift",
+      "seoDescription": "Серия видео-поздравлений с волшебным подарком, сиянием и праздничной магией для Telegram, WhatsApp и соцсетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "волшебный подарок",
+        "праздничное поздравление"
+      ]
     },
     {
       "id": "03_cat_gift",
@@ -22,7 +42,17 @@ window.birthdayCatalog = {
       "desc": "Милая серия с котиком и подарком для тёплых и дружеских поздравлений.",
       "price": 199,
       "folderName": "03_Cat_Gift",
-      "assetsFolder": "01_Birthday/03_Cat_Gift"
+      "assetsFolder": "01_Birthday/03_Cat_Gift",
+      "seoDescription": "Милые видео-открытки с котиком и подарком для дружеских, семейных и тёплых поздравлений с Днём рождения.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "котик",
+        "милое поздравление"
+      ]
     },
     {
       "id": "04_cake",
@@ -30,7 +60,17 @@ window.birthdayCatalog = {
       "desc": "Праздничный торт, свечи и сладкие пожелания для детей, женщин, друзей и коллег.",
       "price": 199,
       "folderName": "04_Cake",
-      "assetsFolder": "01_Birthday/04_Cake"
+      "assetsFolder": "01_Birthday/04_Cake",
+      "seoDescription": "Яркие видео-открытки с праздничным тортом, свечами и сладкой атмосферой для поздравлений детям, близким и коллегам.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "торт",
+        "свечи"
+      ]
     },
     {
       "id": "05_golden",
@@ -38,7 +78,17 @@ window.birthdayCatalog = {
       "desc": "Элегантная premium-серия для взрослой аудитории, коллег и стильных поздравлений.",
       "price": 199,
       "folderName": "05_Golden",
-      "assetsFolder": "01_Birthday/05_Golden"
+      "assetsFolder": "01_Birthday/05_Golden",
+      "seoDescription": "Премиальные видео-открытки в золотой эстетике для стильных поздравлений взрослым, коллегам и близким.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "premium",
+        "золотой стиль"
+      ]
     },
     {
       "id": "06_cosmic",
@@ -46,7 +96,17 @@ window.birthdayCatalog = {
       "desc": "Яркая космическая серия для друзей, детей, подростков и фантазийных поздравлений.",
       "price": 199,
       "folderName": "06_Cosmic",
-      "assetsFolder": "01_Birthday/06_Cosmic"
+      "assetsFolder": "01_Birthday/06_Cosmic",
+      "seoDescription": "Космические видео-поздравления с планетами, звёздами и фантазийной атмосферой для необычного Дня рождения.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "космос",
+        "звёзды"
+      ]
     },
     {
       "id": "07_cat_delivery",
@@ -54,7 +114,17 @@ window.birthdayCatalog = {
       "desc": "Милая и немного юмористическая серия: котик доставляет радость и поздравление.",
       "price": 199,
       "folderName": "07_Cat_Delivery",
-      "assetsFolder": "01_Birthday/07_Cat_Delivery"
+      "assetsFolder": "01_Birthday/07_Cat_Delivery",
+      "seoDescription": "Добрые и юмористические видео-открытки с котиком-доставщиком для лёгкого поздравления в мессенджерах.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "котик-доставщик",
+        "подарок"
+      ]
     }
   ],
   "skus": [
@@ -68,7 +138,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/01_Storybook/HB-SB-001_magic-wish_15s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/01_Storybook/HB-SB-001_magic-wish_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "15 сек"
+      "duration": "15 сек",
+      "seoDescription": "Сказочная MP4-видео-открытка «Магическое желание» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Сказочная книга",
+        "сказочная открытка",
+        "волшебная книга"
+      ]
     },
     {
       "id": "HB-SB-002",
@@ -80,7 +161,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/01_Storybook/HB-SB-002_today-your-day_15s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/01_Storybook/HB-SB-002_today-your-day_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "15 сек"
+      "duration": "15 сек",
+      "seoDescription": "Сказочная MP4-видео-открытка «Твой день» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Сказочная книга",
+        "сказочная открытка",
+        "волшебная книга"
+      ]
     },
     {
       "id": "HB-SB-003",
@@ -92,7 +184,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/01_Storybook/HB-SB-003_dreams-come-true_15s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/01_Storybook/HB-SB-003_dreams-come-true_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "15 сек"
+      "duration": "15 сек",
+      "seoDescription": "Сказочная MP4-видео-открытка «Мечты сбываются» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Сказочная книга",
+        "сказочная открытка",
+        "волшебная книга"
+      ]
     },
     {
       "id": "HB-SB-004",
@@ -104,7 +207,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/01_Storybook/HB-SB-004_for-mom_15s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/01_Storybook/HB-SB-004_for-mom_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "15 сек"
+      "duration": "15 сек",
+      "seoDescription": "Сказочная MP4-видео-открытка «Для мамы» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Сказочная книга",
+        "сказочная открытка",
+        "волшебная книга"
+      ]
     },
     {
       "id": "HB-SB-005",
@@ -116,7 +230,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/01_Storybook/HB-SB-005_for-friend_15s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/01_Storybook/HB-SB-005_for-friend_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "15 сек"
+      "duration": "15 сек",
+      "seoDescription": "Сказочная MP4-видео-открытка «Для подруги / друга» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Сказочная книга",
+        "сказочная открытка",
+        "волшебная книга"
+      ]
     },
     {
       "id": "HB-SB-006",
@@ -128,7 +253,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/01_Storybook/HB-SB-006_short-magic_12s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/01_Storybook/HB-SB-006_short-magic_12s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "12 сек"
+      "duration": "12 сек",
+      "seoDescription": "Сказочная MP4-видео-открытка «Маленькое чудо» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Сказочная книга",
+        "сказочная открытка",
+        "волшебная книга"
+      ]
     },
     {
       "id": "HB-MG-001",
@@ -140,7 +276,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/02_Magic_Gift/HB-MG-001_open-miracle_10s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/02_Magic_Gift/HB-MG-001_open-miracle_10s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "10 сек"
+      "duration": "10 сек",
+      "seoDescription": "Видео-открытка с волшебным подарком «Открой чудо» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Волшебный подарок",
+        "волшебный подарок",
+        "праздничное поздравление"
+      ]
     },
     {
       "id": "HB-MG-002",
@@ -152,7 +299,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/02_Magic_Gift/HB-MG-002_warm-wishes_10s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/02_Magic_Gift/HB-MG-002_warm-wishes_10s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "10 сек"
+      "duration": "10 сек",
+      "seoDescription": "Видео-открытка с волшебным подарком «Тёплые пожелания» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Волшебный подарок",
+        "волшебный подарок",
+        "праздничное поздравление"
+      ]
     },
     {
       "id": "HB-MG-003",
@@ -164,7 +322,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/02_Magic_Gift/HB-MG-003_dreams-light_10s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/02_Magic_Gift/HB-MG-003_dreams-light_10s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "10 сек"
+      "duration": "10 сек",
+      "seoDescription": "Видео-открытка с волшебным подарком «Свет мечты» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Волшебный подарок",
+        "волшебный подарок",
+        "праздничное поздравление"
+      ]
     },
     {
       "id": "HB-MG-004",
@@ -176,7 +345,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/02_Magic_Gift/HB-MG-004_beautiful-day_10s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/02_Magic_Gift/HB-MG-004_beautiful-day_10s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "10 сек"
+      "duration": "10 сек",
+      "seoDescription": "Видео-открытка с волшебным подарком «Прекрасный день» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Волшебный подарок",
+        "волшебный подарок",
+        "праздничное поздравление"
+      ]
     },
     {
       "id": "HB-MG-005",
@@ -188,7 +368,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/02_Magic_Gift/HB-MG-005_little-magic_10s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/02_Magic_Gift/HB-MG-005_little-magic_10s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "10 сек"
+      "duration": "10 сек",
+      "seoDescription": "Видео-открытка с волшебным подарком «Магия момента» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Волшебный подарок",
+        "волшебный подарок",
+        "праздничное поздравление"
+      ]
     },
     {
       "id": "HB-MG-006",
@@ -200,7 +391,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/02_Magic_Gift/HB-MG-006_classic-wishes_10s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/02_Magic_Gift/HB-MG-006_classic-wishes_10s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "10 сек"
+      "duration": "10 сек",
+      "seoDescription": "Видео-открытка с волшебным подарком «Классика» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Волшебный подарок",
+        "волшебный подарок",
+        "праздничное поздравление"
+      ]
     },
     {
       "id": "HB-CAT-001",
@@ -212,7 +414,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/03_Cat_Gift/HB-CAT-001_little-wonders_8s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/03_Cat_Gift/HB-CAT-001_little-wonders_8s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "8 сек"
+      "duration": "8 сек",
+      "seoDescription": "Милая видео-открытка с котиком «Маленькие чудеса» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Котик с подарком",
+        "котик",
+        "милое поздравление"
+      ]
     },
     {
       "id": "HB-CAT-002",
@@ -224,7 +437,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/03_Cat_Gift/HB-CAT-002_universal-joy_8s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/03_Cat_Gift/HB-CAT-002_universal-joy_8s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "8 сек"
+      "duration": "8 сек",
+      "seoDescription": "Милая видео-открытка с котиком «Радость всем» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Котик с подарком",
+        "котик",
+        "милое поздравление"
+      ]
     },
     {
       "id": "HB-CAT-003",
@@ -236,7 +460,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/03_Cat_Gift/HB-CAT-003_gift-of-smiles_8s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/03_Cat_Gift/HB-CAT-003_gift-of-smiles_8s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "8 сек"
+      "duration": "8 сек",
+      "seoDescription": "Милая видео-открытка с котиком «Подарок улыбок» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Котик с подарком",
+        "котик",
+        "милое поздравление"
+      ]
     },
     {
       "id": "HB-CAT-004",
@@ -248,7 +483,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/03_Cat_Gift/HB-CAT-004_for-friend_8s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/03_Cat_Gift/HB-CAT-004_for-friend_8s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "8 сек"
+      "duration": "8 сек",
+      "seoDescription": "Милая видео-открытка с котиком «Для подруги / друга» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Котик с подарком",
+        "котик",
+        "милое поздравление"
+      ]
     },
     {
       "id": "HB-CAT-005",
@@ -260,7 +506,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/03_Cat_Gift/HB-CAT-005_for-mom_8s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/03_Cat_Gift/HB-CAT-005_for-mom_8s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "8 сек"
+      "duration": "8 сек",
+      "seoDescription": "Милая видео-открытка с котиком «Для мамы» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Котик с подарком",
+        "котик",
+        "милое поздравление"
+      ]
     },
     {
       "id": "HB-CAT-006",
@@ -272,7 +529,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/03_Cat_Gift/HB-CAT-006_meow-delivery_8s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/03_Cat_Gift/HB-CAT-006_meow-delivery_8s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "8 сек"
+      "duration": "8 сек",
+      "seoDescription": "Милая видео-открытка с котиком «Мяу доставка» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Котик с подарком",
+        "котик",
+        "милое поздравление"
+      ]
     },
     {
       "id": "HB-CAKE-001",
@@ -284,7 +552,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/04_Cake/HB-CAKE-001_sweet-wishes_15s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/04_Cake/HB-CAKE-001_sweet-wishes_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "15 сек"
+      "duration": "15 сек",
+      "seoDescription": "Праздничная видео-открытка с тортом «Сладкие пожелания» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Торт собирается сам",
+        "торт",
+        "свечи"
+      ]
     },
     {
       "id": "HB-CAKE-002",
@@ -296,7 +575,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/04_Cake/HB-CAKE-002_candles-wish_15s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/04_Cake/HB-CAKE-002_candles-wish_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "15 сек"
+      "duration": "15 сек",
+      "seoDescription": "Праздничная видео-открытка с тортом «Свечи желаний» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Торт собирается сам",
+        "торт",
+        "свечи"
+      ]
     },
     {
       "id": "HB-CAKE-003",
@@ -308,7 +598,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/04_Cake/HB-CAKE-003_sweet-childhood_15s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/04_Cake/HB-CAKE-003_sweet-childhood_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "15 сек"
+      "duration": "15 сек",
+      "seoDescription": "Праздничная видео-открытка с тортом «Сладкое детство» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Торт собирается сам",
+        "торт",
+        "свечи"
+      ]
     },
     {
       "id": "HB-CAKE-004",
@@ -320,7 +621,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/04_Cake/HB-CAKE-004_gentle-beauty_15s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/04_Cake/HB-CAKE-004_gentle-beauty_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "15 сек"
+      "duration": "15 сек",
+      "seoDescription": "Праздничная видео-открытка с тортом «Нежная красота» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Торт собирается сам",
+        "торт",
+        "свечи"
+      ]
     },
     {
       "id": "HB-CAKE-005",
@@ -332,7 +644,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/04_Cake/HB-CAKE-005_colleague-wishes_15s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/04_Cake/HB-CAKE-005_colleague-wishes_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "15 сек"
+      "duration": "15 сек",
+      "seoDescription": "Праздничная видео-открытка с тортом «Для коллеги» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Торт собирается сам",
+        "торт",
+        "свечи"
+      ]
     },
     {
       "id": "HB-CAKE-006",
@@ -344,7 +667,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/04_Cake/HB-CAKE-006_berry-happiness_15s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/04_Cake/HB-CAKE-006_berry-happiness_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "15 сек"
+      "duration": "15 сек",
+      "seoDescription": "Праздничная видео-открытка с тортом «Ягодное счастье» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Торт собирается сам",
+        "торт",
+        "свечи"
+      ]
     },
     {
       "id": "HB-GOLD-001",
@@ -356,7 +690,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/05_Golden/HB-GOLD-001_beautiful-day_15s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/05_Golden/HB-GOLD-001_beautiful-day_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "15 сек"
+      "duration": "15 сек",
+      "seoDescription": "Премиальная золотая видео-открытка «Прекрасный день» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Золотой день рождения",
+        "premium",
+        "золотой стиль"
+      ]
     },
     {
       "id": "HB-GOLD-002",
@@ -368,7 +713,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/05_Golden/HB-GOLD-002_golden-wishes_15s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/05_Golden/HB-GOLD-002_golden-wishes_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "15 сек"
+      "duration": "15 сек",
+      "seoDescription": "Премиальная золотая видео-открытка «Золотые пожелания» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Золотой день рождения",
+        "premium",
+        "золотой стиль"
+      ]
     },
     {
       "id": "HB-GOLD-003",
@@ -380,7 +736,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/05_Golden/HB-GOLD-003_elegant-woman_15s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/05_Golden/HB-GOLD-003_elegant-woman_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "15 сек"
+      "duration": "15 сек",
+      "seoDescription": "Премиальная золотая видео-открытка «Элегантная открытка» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Золотой день рождения",
+        "premium",
+        "золотой стиль"
+      ]
     },
     {
       "id": "HB-GOLD-004",
@@ -392,7 +759,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/05_Golden/HB-GOLD-004_colleague-premium_15s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/05_Golden/HB-GOLD-004_colleague-premium_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "15 сек"
+      "duration": "15 сек",
+      "seoDescription": "Премиальная золотая видео-открытка «Коллеге Premium» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Золотой день рождения",
+        "premium",
+        "золотой стиль"
+      ]
     },
     {
       "id": "HB-GOLD-005",
@@ -404,7 +782,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/05_Golden/HB-GOLD-005_best-moments_15s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/05_Golden/HB-GOLD-005_best-moments_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "15 сек"
+      "duration": "15 сек",
+      "seoDescription": "Премиальная золотая видео-открытка «Лучшие моменты» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Золотой день рождения",
+        "premium",
+        "золотой стиль"
+      ]
     },
     {
       "id": "HB-GOLD-006",
@@ -416,7 +805,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/05_Golden/HB-GOLD-006_luxury-short_15s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/05_Golden/HB-GOLD-006_luxury-short_15s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "15 сек"
+      "duration": "15 сек",
+      "seoDescription": "Премиальная золотая видео-открытка «Люкс открытка» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Золотой день рождения",
+        "premium",
+        "золотой стиль"
+      ]
     },
     {
       "id": "HB-COS-001",
@@ -428,7 +828,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/06_Cosmic/HB-COS-001_your-universe_8s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/06_Cosmic/HB-COS-001_your-universe_8s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "8 сек"
+      "duration": "8 сек",
+      "seoDescription": "Космическая видео-открытка «Твоя вселенная» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Космический день рождения",
+        "космос",
+        "звёзды"
+      ]
     },
     {
       "id": "HB-COS-002",
@@ -440,7 +851,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/06_Cosmic/HB-COS-002_star-wish_8s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/06_Cosmic/HB-COS-002_star-wish_8s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "8 сек"
+      "duration": "8 сек",
+      "seoDescription": "Космическая видео-открытка «Звёздное желание» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Космический день рождения",
+        "космос",
+        "звёзды"
+      ]
     },
     {
       "id": "HB-COS-003",
@@ -452,7 +874,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/06_Cosmic/HB-COS-003_cosmic-dreams_8s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/06_Cosmic/HB-COS-003_cosmic-dreams_8s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "8 сек"
+      "duration": "8 сек",
+      "seoDescription": "Космическая видео-открытка «Космические сны» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Космический день рождения",
+        "космос",
+        "звёзды"
+      ]
     },
     {
       "id": "HB-COS-004",
@@ -464,7 +897,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/06_Cosmic/HB-COS-004_birthday-orbit_8s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/06_Cosmic/HB-COS-004_birthday-orbit_8s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "8 сек"
+      "duration": "8 сек",
+      "seoDescription": "Космическая видео-открытка «На орбите» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Космический день рождения",
+        "космос",
+        "звёзды"
+      ]
     },
     {
       "id": "HB-COS-005",
@@ -476,7 +920,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/06_Cosmic/HB-COS-005_galaxy-of-joy_8s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/06_Cosmic/HB-COS-005_galaxy-of-joy_8s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "8 сек"
+      "duration": "8 сек",
+      "seoDescription": "Космическая видео-открытка «Галактика радости» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Космический день рождения",
+        "космос",
+        "звёзды"
+      ]
     },
     {
       "id": "HB-COS-006",
@@ -488,7 +943,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/06_Cosmic/HB-COS-006_new-planet_8s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/06_Cosmic/HB-COS-006_new-planet_8s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "8 сек"
+      "duration": "8 сек",
+      "seoDescription": "Космическая видео-открытка «Новая планета» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Космический день рождения",
+        "космос",
+        "звёзды"
+      ]
     },
     {
       "id": "HB-CATD-001",
@@ -500,7 +966,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/07_Cat_Delivery/HB-CATD-001_delivery-of-joy_10s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/07_Cat_Delivery/HB-CATD-001_delivery-of-joy_10s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "10 сек"
+      "duration": "10 сек",
+      "seoDescription": "Видео-открытка с котиком-доставщиком «Доставка радости» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Котик-доставщик",
+        "котик-доставщик",
+        "подарок"
+      ]
     },
     {
       "id": "HB-CATD-002",
@@ -512,7 +989,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/07_Cat_Delivery/HB-CATD-002_meow-express_10s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/07_Cat_Delivery/HB-CATD-002_meow-express_10s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "10 сек"
+      "duration": "10 сек",
+      "seoDescription": "Видео-открытка с котиком-доставщиком «Мяу экспресс» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Котик-доставщик",
+        "котик-доставщик",
+        "подарок"
+      ]
     },
     {
       "id": "HB-CATD-003",
@@ -524,7 +1012,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/07_Cat_Delivery/HB-CATD-003_gift-for-you_10s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/07_Cat_Delivery/HB-CATD-003_gift-for-you_10s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "10 сек"
+      "duration": "10 сек",
+      "seoDescription": "Видео-открытка с котиком-доставщиком «Подарок для тебя» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Котик-доставщик",
+        "котик-доставщик",
+        "подарок"
+      ]
     },
     {
       "id": "HB-CATD-004",
@@ -536,7 +1035,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/07_Cat_Delivery/HB-CATD-004_paws-and-smiles_10s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/07_Cat_Delivery/HB-CATD-004_paws-and-smiles_10s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "10 сек"
+      "duration": "10 сек",
+      "seoDescription": "Видео-открытка с котиком-доставщиком «Лапки и улыбки» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Котик-доставщик",
+        "котик-доставщик",
+        "подарок"
+      ]
     },
     {
       "id": "HB-CATD-005",
@@ -548,7 +1058,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/07_Cat_Delivery/HB-CATD-005_for-child_10s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/07_Cat_Delivery/HB-CATD-005_for-child_10s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "10 сек"
+      "duration": "10 сек",
+      "seoDescription": "Видео-открытка с котиком-доставщиком «Для ребёнка» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Котик-доставщик",
+        "котик-доставщик",
+        "подарок"
+      ]
     },
     {
       "id": "HB-CATD-006",
@@ -560,7 +1081,18 @@ window.birthdayCatalog = {
       "poster": "assets/posters/01_Birthday/07_Cat_Delivery/HB-CATD-006_birthday-package_10s_1080p_6mbps_poster_720x1280.webp",
       "video": "assets/videos/01_Birthday/07_Cat_Delivery/HB-CATD-006_birthday-package_10s_1080p_6mbps_site-preview_720x1280.mp4",
       "price": 49,
-      "duration": "10 сек"
+      "duration": "10 сек",
+      "seoDescription": "Видео-открытка с котиком-доставщиком «Посылка радости» для поздравления с Днём рождения в формате MP4. Подходит для Telegram, WhatsApp и социальных сетей.",
+      "tags": [
+        "видео-открытка",
+        "день рождения",
+        "MP4",
+        "Telegram",
+        "WhatsApp",
+        "Котик-доставщик",
+        "котик-доставщик",
+        "подарок"
+      ]
     }
   ]
 };

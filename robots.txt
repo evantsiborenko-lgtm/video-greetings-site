@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://evantsiborenko-lgtm.github.io/video-greetings-site/sitemap.xml
+Sitemap: https://evantsiborenko-lgtm.github.io/video-greetings-site/video-sitemap.xml

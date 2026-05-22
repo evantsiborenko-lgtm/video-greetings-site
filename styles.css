@@ -232,7 +232,7 @@ a {
 
 .icon-button,
 .cart-pill,
-.login-button,
+.messenger-button,
 .icon-close,
 .modal-close {
     border: 0;
@@ -250,7 +250,7 @@ a {
 
 .icon-button:hover,
 .cart-pill:hover,
-.login-button:hover {
+.messenger-button:hover {
     background: rgba(255, 255, 255, 0.9);
     transform: translateY(-1px);
 }
@@ -279,9 +279,10 @@ a {
 }
 
 .search-button:disabled {
-    opacity: 0.34;
+    opacity: 0.16;
     cursor: default;
     pointer-events: none;
+    filter: grayscale(1);
 }
 
 .music-toggle::before,
@@ -361,12 +362,41 @@ a {
     padding: 0 5px;
 }
 
-.login-button {
+.messenger-button {
+    width: 42px;
     height: 42px;
-    padding: 0 21px;
     border-radius: 14px;
-    color: #3f3a34;
-    background: rgba(255, 255, 255, 0.5);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 0.72rem;
+    font-weight: 860;
+    letter-spacing: -0.02em;
+    color: #1d1a16;
+    background: rgba(255, 255, 255, 0.56);
+    border: 1px solid rgba(35, 31, 28, 0.08);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55);
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.messenger-max {
+    color: #111;
+}
+
+.messenger-tg {
+    color: #111;
+}
+
+.messenger-button:hover {
+    box-shadow: 0 10px 24px rgba(24, 18, 8, 0.08);
+}
+
+.footer-links {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
 }
 
 /* Buttons */
@@ -1031,6 +1061,21 @@ a {
 .sku-info p {
     color: var(--muted);
     font-size: 0.84rem;
+}
+
+.sku-series-name {
+    color: var(--muted);
+}
+
+.sku-description {
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: 0.78rem;
+    line-height: 1.35;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .sku-actions {
@@ -1735,8 +1780,7 @@ a {
         display: none;
     }
 
-    .search-button,
-    .login-button {
+    .search-button {
         display: none;
     }
 
@@ -1872,6 +1916,13 @@ a {
 
     .cart-pill {
         min-width: 48px;
+    }
+
+    .messenger-button {
+        width: 38px;
+        height: 38px;
+        border-radius: 13px;
+        font-size: 0.66rem;
     }
 
     .hero h1 {
