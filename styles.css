@@ -392,6 +392,32 @@ a {
     box-shadow: 0 10px 24px rgba(24, 18, 8, 0.08);
 }
 
+.messenger-button img,
+.btn-with-icon img,
+.footer-messenger img {
+    width: 22px;
+    height: 22px;
+    display: block;
+    object-fit: contain;
+}
+
+.btn-with-icon img {
+    width: 24px;
+    height: 24px;
+    margin-left: -2px;
+}
+
+.footer-messenger {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.footer-messenger img {
+    width: 20px;
+    height: 20px;
+}
+
 .footer-links {
     display: inline-flex;
     align-items: center;
@@ -1644,6 +1670,19 @@ a {
     margin-bottom: 3px;
 }
 
+.cart-messenger-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.cart-messenger-actions .btn {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    white-space: nowrap;
+}
+
 .toast {
     position: fixed;
     left: 50%;
@@ -1726,6 +1765,8 @@ a {
 
 .modal-actions .btn {
     flex: 1;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 /* Responsive */
@@ -1933,6 +1974,10 @@ a {
     .payment-actions,
     .modal-actions {
         flex-direction: column;
+    }
+
+    .cart-messenger-actions {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .hero-actions .btn,

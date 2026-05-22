@@ -1,5 +1,8 @@
 const PAYMENT_URL = 'https://c2c.cbrpay.ru/AS1I002E5DAN3MRN8KQP9R97693V67MF';
 const TELEGRAM_URL = 'https://t.me/KVSemenov';
+const MAX_URL = 'https://max.ru/u/f9LHodD0cOLZzHwZ51dxtX3sknfp7zi5fzBEyEGUUWF12AEyCT9e1GgoPqI';
+const MAIN_THEME_SRC = 'assets/audio/The_Gilded_Invitation.mp3';
+const CART_THEME_SRC = 'assets/audio/Unfolding_Wonder.mp3';
 
 const PRICES = {
     single: 49,
@@ -311,7 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const videoSrc = previewButton.getAttribute('data-video');
                 if (!videoSrc) return;
                 event.preventDefault();
-                stopMusic();
+                stopMusic(false);
                 focusReturnElement = previewButton;
                 modalSkuId = previewButton.getAttribute('data-sku') || catalog.skus.find(sku => sku.video === videoSrc)?.id || '';
                 if (modalAddButton) {
@@ -431,6 +434,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cart.singles.push(skuId);
         saveCart(cart);
         updateCartUI();
+        playCartTheme();
         if (notify) showToast('Ролик добавлен в корзину');
         openCart();
     }
@@ -445,6 +449,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cart.series.push(seriesId);
         saveCart(cart);
         updateCartUI();
+        playCartTheme();
         showToast('Серия добавлена в корзину');
         openCart();
     }
@@ -459,6 +464,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cart.packages.push(packageId);
         saveCart(cart);
         updateCartUI();
+        playCartTheme();
         showToast('Пакет добавлен в корзину');
         openCart();
     }
@@ -603,7 +609,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <article class="cart-line">
                 <div>
                     <strong>Персонализация</strong>
-                    <span>Имя или свой текст — согласование в Telegram</span>
+                    <span>Имя или свой текст — согласование в MAX или Telegram</span>
                 </div>
                 <b>${money(PRICES.personalization)}</b>
                 <button class="line-remove" type="button" data-remove-cart="personalization" data-id="personalization" aria-label="Удалить персонализацию"></button>
@@ -666,7 +672,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const text = buildOrderText();
         try {
             await navigator.clipboard.writeText(text);
-            showToast('Заказ скопирован для Telegram');
+            showToast('Заказ скопирован для MAX / TG');
         } catch (error) {
             const textarea = document.createElement('textarea');
             textarea.value = text;
@@ -677,7 +683,7 @@ document.addEventListener('DOMContentLoaded', () => {
             textarea.select();
             document.execCommand('copy');
             textarea.remove();
-            showToast('Заказ скопирован для Telegram');
+            showToast('Заказ скопирован для MAX / TG');
         }
     }
 
@@ -705,80 +711,83 @@ document.addEventListener('DOMContentLoaded', () => {
         showToast.timer = setTimeout(() => toast.classList.remove('show'), 2200);
     }
 
-    // Background music: only after explicit user click. No autoplay, no external audio file.
-    let audioContext = null;
-    let musicGain = null;
-    let musicTimer = null;
+    // Background music uses local MP3 files. No sound starts on page load.
+    let mainThemeAudio = null;
+    let cartThemeAudio = null;
+    let activeAudio = null;
     let musicEnabled = false;
-    const notes = [392, 494, 523, 659, 587, 494, 440, 523];
-    let noteIndex = 0;
 
     function initMusicToggle() {
         document.querySelectorAll('.music-toggle').forEach(button => {
             button.addEventListener('click', async () => {
                 if (musicEnabled) {
-                    stopMusic();
+                    stopMusic(true);
                 } else {
-                    await startMusic();
+                    await playTheme('main', true);
                 }
             });
         });
     }
 
-    async function startMusic() {
+    function createLoopingAudio(src, volume) {
+        const audio = new Audio(src);
+        audio.loop = true;
+        audio.preload = 'auto';
+        audio.volume = volume;
+        return audio;
+    }
+
+    function getMainThemeAudio() {
+        if (!mainThemeAudio) mainThemeAudio = createLoopingAudio(MAIN_THEME_SRC, 0.24);
+        return mainThemeAudio;
+    }
+
+    function getCartThemeAudio() {
+        if (!cartThemeAudio) cartThemeAudio = createLoopingAudio(CART_THEME_SRC, 0.26);
+        return cartThemeAudio;
+    }
+
+    async function playTheme(theme, notify = false) {
+        const nextAudio = theme === 'cart' ? getCartThemeAudio() : getMainThemeAudio();
         try {
-            audioContext = audioContext || new (window.AudioContext || window.webkitAudioContext)();
-            if (audioContext.state === 'suspended') await audioContext.resume();
-            musicGain = audioContext.createGain();
-            musicGain.gain.setValueAtTime(0.035, audioContext.currentTime);
-            musicGain.connect(audioContext.destination);
+            if (activeAudio && activeAudio !== nextAudio) {
+                activeAudio.pause();
+                activeAudio.currentTime = 0;
+            }
+            activeAudio = nextAudio;
             musicEnabled = true;
             updateMusicButtons();
-            playMusicNote();
-            musicTimer = window.setInterval(playMusicNote, 780);
-            showToast('Фоновая музыка включена');
+            await nextAudio.play();
+            if (notify) showToast(theme === 'cart' ? 'Музыка заказа включена' : 'Фоновая музыка включена');
         } catch (error) {
-            showToast('Не удалось включить музыку в этом браузере');
+            musicEnabled = false;
+            activeAudio = null;
+            updateMusicButtons();
+            if (notify) showToast('Не удалось включить музыку в этом браузере');
         }
     }
 
-    function playMusicNote() {
-        if (!audioContext || !musicGain || !musicEnabled) return;
-        const now = audioContext.currentTime;
-        const oscillator = audioContext.createOscillator();
-        const noteGain = audioContext.createGain();
-        oscillator.type = 'sine';
-        oscillator.frequency.setValueAtTime(notes[noteIndex % notes.length], now);
-        noteGain.gain.setValueAtTime(0.0001, now);
-        noteGain.gain.exponentialRampToValueAtTime(0.9, now + 0.05);
-        noteGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.65);
-        oscillator.connect(noteGain);
-        noteGain.connect(musicGain);
-        oscillator.start(now);
-        oscillator.stop(now + 0.7);
-        noteIndex += 1;
+    function playCartTheme() {
+        playTheme('cart', false).catch(() => {});
     }
 
-    function stopMusic() {
-        if (!musicEnabled) return;
+    function stopMusic(notify = true) {
+        [mainThemeAudio, cartThemeAudio].forEach(audio => {
+            if (!audio) return;
+            audio.pause();
+            try { audio.currentTime = 0; } catch (error) {}
+        });
+        const wasEnabled = musicEnabled;
+        activeAudio = null;
         musicEnabled = false;
-        if (musicTimer) window.clearInterval(musicTimer);
-        musicTimer = null;
-        if (musicGain) {
-            try {
-                musicGain.gain.exponentialRampToValueAtTime(0.0001, audioContext.currentTime + 0.08);
-                window.setTimeout(() => musicGain?.disconnect(), 120);
-            } catch (error) {}
-        }
-        musicGain = null;
         updateMusicButtons();
-        showToast('Фоновая музыка выключена');
+        if (notify && wasEnabled) showToast('Фоновая музыка выключена');
     }
 
     function updateMusicButtons() {
         document.querySelectorAll('.music-toggle').forEach(button => {
             button.setAttribute('aria-pressed', String(musicEnabled));
-            button.setAttribute('aria-label', musicEnabled ? 'Выключить фоновую музыку' : 'Включить фоновую музыку');
+            button.setAttribute('aria-label', musicEnabled ? 'Выключить музыку' : 'Включить фоновую музыку');
         });
     }
 });
