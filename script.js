@@ -816,6 +816,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function playCartTheme() {
+        if (!musicEnabled) return;
         playTheme('cart', false).catch(() => {});
     }
 
