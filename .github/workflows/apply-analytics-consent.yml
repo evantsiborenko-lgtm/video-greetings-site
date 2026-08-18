@@ -1,0 +1,33 @@
+name: Apply analytics consent gate
+
+on:
+  push:
+    branches: [video-greeting-cards-website-9028712209056600763]
+    paths:
+      - '.github/workflows/apply-analytics-consent.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch index
+        shell: python
+        run: |
+          from pathlib import Path
+          p=Path('index.html')
+          t=p.read_text(encoding='utf-8')
+          if 'analytics-consent.css' not in t:
+              t=t.replace('</head>','    <link rel="stylesheet" href="analytics-consent.css">\n    <script src="analytics-consent.js" defer></script>\n</head>',1)
+          p.write_text(t,encoding='utf-8')
+      - name: Commit changes
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html
+          git commit -m 'Add explicit analytics consent to video greetings' || exit 0
+          git push
